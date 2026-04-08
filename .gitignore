@@ -1,0 +1,16 @@
+datasets/
+debug.log
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Notebook caches
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+
+# Generated project artifacts
+inspecsafe_auto_label_tool/artifacts/

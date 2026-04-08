@@ -1,0 +1,66 @@
+{
+  "version": "v1",
+  "description": "Initial editable label schema for InspecSafe factory inspection auto labeling.",
+  "labels": [
+    {
+      "name": "Person",
+      "prompts": ["person", "worker", "inspector", "operator"]
+    },
+    {
+      "name": "Open Flame",
+      "prompts": ["open flame", "fire", "flame"]
+    },
+    {
+      "name": "Smoke",
+      "prompts": ["smoke", "smoke plume"]
+    },
+    {
+      "name": "Fire Hydrant",
+      "prompts": ["fire hydrant", "hydrant"]
+    },
+    {
+      "name": "Fire Extinguisher",
+      "prompts": ["fire extinguisher", "extinguisher"]
+    },
+    {
+      "name": "Safety Helmet",
+      "prompts": ["safety helmet", "hard hat", "helmet"]
+    },
+    {
+      "name": "Electronic Control Cabinet",
+      "prompts": ["electronic control cabinet", "control cabinet", "cabinet"]
+    },
+    {
+      "name": "Electrical Box",
+      "prompts": ["electrical box", "power box", "distribution box"]
+    },
+    {
+      "name": "Pipeline",
+      "prompts": ["pipeline", "pipe", "industrial pipe"]
+    },
+    {
+      "name": "Valve",
+      "prompts": ["valve", "industrial valve", "ball valve"]
+    },
+    {
+      "name": "Pressure Gauge",
+      "prompts": ["pressure gauge", "gauge", "meter"]
+    },
+    {
+      "name": "Sight Hole Cover",
+      "prompts": ["sight hole cover", "inspection cover"]
+    },
+    {
+      "name": "Direct-Blow Pipe",
+      "prompts": ["direct-blow pipe", "vertical pipe", "pipe"]
+    },
+    {
+      "name": "Ladder",
+      "prompts": ["ladder", "metal ladder"]
+    },
+    {
+      "name": "Motor",
+      "prompts": ["motor", "industrial motor"]
+    }
+  ]
+}

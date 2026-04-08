@@ -1,0 +1,22 @@
+<View>
+  <Header value="InspecSafe Factory Inspection Segmentation" />
+  <Text name="meta" value="$meta" size="2" />
+  <Image name="image" value="$image" zoom="true" rotateControl="true" />
+  <PolygonLabels name="label" toName="image" strokeWidth="2" pointSize="small" opacity="0.35">
+    <Label value="Person" background="#D32F2F" />
+    <Label value="Open Flame" background="#F57C00" />
+    <Label value="Smoke" background="#616161" />
+    <Label value="Fire Hydrant" background="#C2185B" />
+    <Label value="Fire Extinguisher" background="#E53935" />
+    <Label value="Safety Helmet" background="#FBC02D" />
+    <Label value="Electronic Control Cabinet" background="#1976D2" />
+    <Label value="Electrical Box" background="#5E35B1" />
+    <Label value="Pipeline" background="#00897B" />
+    <Label value="Valve" background="#43A047" />
+    <Label value="Pressure Gauge" background="#3949AB" />
+    <Label value="Sight Hole Cover" background="#6D4C41" />
+    <Label value="Direct-Blow Pipe" background="#00ACC1" />
+    <Label value="Ladder" background="#8D6E63" />
+    <Label value="Motor" background="#7CB342" />
+  </PolygonLabels>
+</View>
