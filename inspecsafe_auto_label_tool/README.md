@@ -140,3 +140,9 @@ python scripts/register_review_batch.py `
 - 批次日志追加写入，不覆盖旧记录
 - 派生导出不反向作为事实源
 - 所有平台交互靠 `asset_id` 对齐，不依赖平台内部任务 ID
+
+## 运行时入口
+
+- Colab 基线入口：`notebooks/inspecsafe_colab_bootstrap.ipynb`
+- Linux GPU 部署入口：`deploy/linux/README.md`
+- 共享核心代码：`src/`、`configs/`、`scripts/`
