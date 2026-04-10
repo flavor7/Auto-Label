@@ -45,7 +45,7 @@ def build_asset_lookup(asset_manifest_path: str | Path) -> tuple[dict[str, dict]
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Normalize Colab prediction JSONL into the local canonical prediction schema."
+        description="Normalize legacy Colab prediction JSONL into the local canonical prediction schema."
     )
     parser.add_argument("--input", required=True, help="Colab prediction JSONL path.")
     parser.add_argument("--asset-manifest", required=True, help="Canonical asset manifest JSONL path.")
@@ -53,7 +53,7 @@ def main() -> None:
     parser.add_argument(
         "--label-schema",
         default="configs/label_schema.json",
-        help="Label schema JSON used to map prompt labels to canonical names.",
+        help="Label schema JSON used to map prompt labels to canonical names. Linux mainline should emit canonical labels directly.",
     )
     parser.add_argument(
         "--allow-unknown-labels",

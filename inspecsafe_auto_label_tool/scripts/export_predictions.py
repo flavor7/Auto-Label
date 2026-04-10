@@ -40,6 +40,11 @@ def main() -> None:
         default=None,
         help="Optional filesystem root used with --url-prefix. Defaults to --document-root.",
     )
+    parser.add_argument(
+        "--model-version",
+        default="unknown",
+        help="Model version label attached to Label Studio predictions.",
+    )
     args = parser.parse_args()
 
     records = load_jsonl(args.input)
@@ -53,6 +58,7 @@ def main() -> None:
             document_root=args.document_root,
             url_prefix=args.url_prefix,
             url_root=args.url_root,
+            model_version=args.model_version,
         )
     write_json(payload, args.output)
     print(f"Exported {len(records)} records to {args.output}")

@@ -29,6 +29,12 @@ inspecsafe_auto_label_tool/
   src/
 ```
 
+当前运行入口按职责区分：
+
+- Linux 主线部署与运行：`deploy/linux/`
+- 共享批处理与索引脚本：`scripts/`
+- notebook：仅保留为实验 / 历史验证工具，不再作为 Linux 主入口
+
 ## 核心文件
 
 - `artifacts/index/asset_manifest.jsonl`
@@ -73,7 +79,7 @@ HTTP 静态服务模式：
 python scripts/export_label_studio_tasks.py `
   --input .\artifacts\index\asset_manifest.jsonl `
   --output .\artifacts\exports\label_studio_tasks_test_http.json `
-  --document-root D:\HuaweiMoveData\Users\matebook14s\Desktop\program\datasets\InspecSafe-V1\DATA_PATH `
+  --document-root <dataset_root> `
   --url-prefix http://127.0.0.1:9000 `
   --split test `
   --limit 50
@@ -95,10 +101,13 @@ python scripts/export_predictions.py `
   --input .\artifacts\predictions.jsonl `
   --format label_studio `
   --asset-manifest .\artifacts\index\asset_manifest.jsonl `
-  --document-root D:\HuaweiMoveData\Users\matebook14s\Desktop\program\datasets\InspecSafe-V1\DATA_PATH `
+  --document-root <dataset_root> `
   --url-prefix http://127.0.0.1:9000 `
+  --model-version groundingdino+sam `
   --output .\artifacts\exports\predictions_label_studio.json
 ```
+
+`scripts/normalize_colab_predictions.py` 仅保留为历史 Colab 输出兼容工具，不作为 Linux 主线路径依赖。
 
 ### 6. 登记批次日志
 
@@ -143,6 +152,7 @@ python scripts/register_review_batch.py `
 
 ## 运行时入口
 
-- Colab 基线入口：`notebooks/inspecsafe_colab_bootstrap.ipynb`
 - Linux GPU 部署入口：`deploy/linux/README.md`
+- Linux 推理配置预留：`configs/linux_inference.default.json`
 - 共享核心代码：`src/`、`configs/`、`scripts/`
+- Colab notebook：仅作实验参考，不作为 Linux 主入口

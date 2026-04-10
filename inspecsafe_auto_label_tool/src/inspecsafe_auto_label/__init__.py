@@ -1,1 +1,1 @@
-"""Utilities for bootstrapping InspecSafe auto labeling workflows."""
+"""Utilities for InspecSafe auto labeling workflows."""

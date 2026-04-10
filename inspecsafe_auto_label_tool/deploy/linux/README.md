@@ -10,9 +10,16 @@
 
 ## Why this fits the repo
 
-- The current project uses Python scripts plus `Label Studio`
-- The notebook bootstrap already installs `GroundingDINO` and `segment-anything`
+- The current project already has canonical manifest, export, and batch registration scripts
+- The Linux mainline is moving to script-first execution instead of notebook-first execution
 - The dataset currently occupies about `23GB`, so a small data disk will fill up quickly after adding checkpoints and exports
+
+## Execution principles
+
+- Use `deploy/linux/setup_env.sh` and `deploy/linux/start_stack.sh` as the default Linux entrypoints
+- Keep notebooks only for experiments or one-off verification; they are not the Linux mainline
+- Prefer config-driven and parameterized scripts so runs can be repeated and registered
+- Target canonical `predictions.jsonl` output that can directly feed manifest / export / batch-register flows
 
 ## Suggested directory layout
 
@@ -29,6 +36,8 @@ Clone the repo under `/root/autodl-tmp/inspecsafe/program` and keep the dataset 
 ## Repo entrypoint
 
 This branch keeps Linux GPU deployment assets under `deploy/linux/`.
+
+For day-to-day instance handling and persistence strategy, also refer to `deploy/linux/AUTODL_USAGE.md`.
 
 ## Setup steps
 

@@ -1,0 +1,30 @@
+{
+  "version": "linux-default-v1",
+  "description": "Default script-first inference configuration for the Linux GPU mainline.",
+  "asset_manifest": "artifacts/index/asset_manifest.jsonl",
+  "label_schema": "configs/label_schema.json",
+  "output_dir": "artifacts/runs/linux_default",
+  "split": "test",
+  "subset": null,
+  "task_group_id": null,
+  "asset_ids": [],
+  "limit": 50,
+  "model": {
+    "name": "groundingdino+sam",
+    "version": "default",
+    "device": "cuda",
+    "groundingdino_checkpoint": "models/groundingdino_swint_ogc.pth",
+    "sam_checkpoint": "models/sam_vit_b_01ec64.pth",
+    "sam_model_type": "vit_b"
+  },
+  "thresholds": {
+    "profile": "default",
+    "box_threshold": 0.35,
+    "text_threshold": 0.25
+  },
+  "export": {
+    "write_predictions_jsonl": true,
+    "write_coco_json": true,
+    "write_label_studio_json": false
+  }
+}

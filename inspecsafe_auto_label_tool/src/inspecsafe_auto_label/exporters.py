@@ -150,6 +150,7 @@ def predictions_to_label_studio(
     document_root: str | Path | None = None,
     url_prefix: str | None = None,
     url_root: str | Path | None = None,
+    model_version: str = "unknown",
 ) -> list[dict[str, Any]]:
     tasks: list[dict[str, Any]] = []
     asset_by_id: dict[str, dict[str, Any]] = {}
@@ -215,7 +216,7 @@ def predictions_to_label_studio(
             {
                 "id": task_id,
                 "data": data,
-                "predictions": [{"model_version": "bootstrap-v1", "result": results}],
+                "predictions": [{"model_version": model_version, "result": results}],
             }
         )
 

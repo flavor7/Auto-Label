@@ -13,9 +13,14 @@
 推荐直接使用一键脚本：
 
 ```cmd
-cd D:\HuaweiMoveData\Users\matebook14s\Desktop\program\inspecsafe_auto_label_tool
+cd <workspace_root>\inspecsafe_auto_label_tool
 scripts\start_local_stack.cmd
 ```
+
+说明：
+
+- `scripts\start_local_stack.cmd` 主要用于 Windows 本地调试
+- Linux 服务器侧统一使用 `deploy/linux/start_stack.sh`
 
 它会启动：
 
@@ -51,7 +56,7 @@ python scripts/build_asset_manifest.py `
 python scripts/export_label_studio_tasks.py `
   --input .\artifacts\index\asset_manifest.jsonl `
   --output .\artifacts\exports\label_studio_tasks_test_http.json `
-  --document-root D:\HuaweiMoveData\Users\matebook14s\Desktop\program\datasets\InspecSafe-V1\DATA_PATH `
+  --document-root <dataset_root> `
   --url-prefix http://127.0.0.1:9000 `
   --split test `
   --limit 50
@@ -89,8 +94,9 @@ python scripts/export_predictions.py `
   --input .\artifacts\predictions.jsonl `
   --format label_studio `
   --asset-manifest .\artifacts\index\asset_manifest.jsonl `
-  --document-root D:\HuaweiMoveData\Users\matebook14s\Desktop\program\datasets\InspecSafe-V1\DATA_PATH `
+  --document-root <dataset_root> `
   --url-prefix http://127.0.0.1:9000 `
+  --model-version groundingdino+sam `
   --output .\artifacts\exports\predictions_label_studio.json
 ```
 
