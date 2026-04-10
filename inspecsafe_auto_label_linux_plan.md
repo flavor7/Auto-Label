@@ -144,6 +144,7 @@ python -c "from segment_anything import sam_model_registry; print('SAM OK')"
 - Linux 计划文件：`D:\HuaweiMoveData\Users\matebook14s\Desktop\program_linux\inspecsafe_auto_label_linux_plan.md`
 - 总计划文件：`D:\HuaweiMoveData\Users\matebook14s\Desktop\program_linux\inspecsafe_auto_label_plan.md`
 - Colab 计划文件：`D:\HuaweiMoveData\Users\matebook14s\Desktop\program_linux\inspecsafe_auto_label_colab_plan.md`
+- Linux 算子报告：`D:\HuaweiMoveData\Users\matebook14s\Desktop\program_linux\inspecsafe_linux_operator_report.md`
 - AutoDL 使用规范：`D:\HuaweiMoveData\Users\matebook14s\Desktop\program_linux\inspecsafe_auto_label_tool\deploy\linux\AUTODL_USAGE.md`
 - Linux 推理默认配置：`D:\HuaweiMoveData\Users\matebook14s\Desktop\program_linux\inspecsafe_auto_label_tool\configs\linux_inference.default.json`
 - Linux 文档入口：`D:\HuaweiMoveData\Users\matebook14s\Desktop\program_linux\inspecsafe_auto_label_tool\deploy\linux\README.md`
