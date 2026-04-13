@@ -54,6 +54,7 @@ class ImagePrediction:
     height: int
     predictions: List[InstancePrediction] = field(default_factory=list)
     asset_id: Optional[str] = None
+    image_rel_path: Optional[str] = None
 
 
 @dataclass
