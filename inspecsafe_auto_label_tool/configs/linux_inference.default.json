@@ -1,8 +1,8 @@
 {
   "version": "linux-default-v1",
-  "description": "Default script-first inference configuration for the Linux GPU mainline.",
-  "dataset_root": "/root/autodl-tmp/inspecsafe/datasets/InspecSafe-V1/DATA_PATH",
-  "asset_manifest": "artifacts/index/asset_manifest.jsonl",
+  "description": "Default script-first inference configuration for the verified Linux GPU baseline.",
+  "dataset_root": "/root/autodl-tmp/datasets/InspecSafe-V1/DATA_PATH",
+  "asset_manifest": "/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/artifacts/index/asset_manifest.jsonl",
   "label_schema": "configs/label_schema.json",
   "output_dir": "artifacts/runs/linux_default",
   "split": "test",
@@ -14,9 +14,9 @@
     "name": "groundingdino+sam",
     "version": "default",
     "device": "cuda",
-    "groundingdino_config": "third_party/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py",
-    "groundingdino_checkpoint": "models/groundingdino_swint_ogc.pth",
-    "sam_checkpoint": "models/sam_vit_b_01ec64.pth",
+    "groundingdino_config": "/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/third_party/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+    "groundingdino_checkpoint": "/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/models/groundingdino_swint_ogc.pth",
+    "sam_checkpoint": "/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/models/sam_vit_b_01ec64.pth",
     "sam_model_type": "vit_b"
   },
   "thresholds": {

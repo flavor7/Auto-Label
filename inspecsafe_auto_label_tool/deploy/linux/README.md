@@ -70,6 +70,64 @@ python -c "from groundingdino.util.inference import Model; print('GroundingDINO 
 python -c "from segment_anything import sam_model_registry; print('SAM OK')"
 ```
 
+## Current verified Linux baseline
+
+The current verified smoke-test baseline uses three separate locations:
+
+- Code workspace: `/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool`
+- Model / third-party resource workspace: `/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool`
+- Dataset root: `/root/autodl-tmp/datasets/InspecSafe-V1/DATA_PATH`
+
+Verified runtime conditions:
+
+- Conda environment: `inspecsafe-gpu`
+- Default Linux inference config: `configs/linux_inference.default.json`
+- GroundingDINO config is reused from the old resource workspace
+- GroundingDINO checkpoint is reused from the old resource workspace
+- SAM checkpoint is reused from the old resource workspace
+- Local `bert-base-uncased` is reused from the old resource workspace and should be exposed to the code workspace with the same name
+- GroundingDINO custom extension `_C` has been compiled in place under the old resource workspace
+
+Verified resource paths:
+
+- GroundingDINO config: `/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/third_party/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py`
+- GroundingDINO checkpoint: `/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/models/groundingdino_swint_ogc.pth`
+- SAM checkpoint: `/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/models/sam_vit_b_01ec64.pth`
+- Local BERT directory: `/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/bert-base-uncased`
+- GroundingDINO `_C` extension: `/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/third_party/GroundingDINO/groundingdino/_C.cpython-312-x86_64-linux-gnu.so`
+
+If the code workspace is still `program_git`, keep a same-name mapping for BERT there:
+
+```bash
+ln -sfn /root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/bert-base-uncased \
+  /root/autodl-tmp/inspecsafe/program_git/bert-base-uncased
+```
+
+A minimal verified smoke-test command is:
+
+```bash
+source /root/miniconda3/etc/profile.d/conda.sh
+conda activate inspecsafe-gpu
+export CUDA_HOME=/usr/local/cuda
+export PYTHONPATH=/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/third_party/GroundingDINO:/root/autodl-tmp/inspecsafe/program/inspecsafe_auto_label_tool/third_party/segment-anything:/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/src
+/root/miniconda3/envs/inspecsafe-gpu/bin/python /root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/scripts/run_linux_baseline_inference.py --config /root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/configs/linux_inference.default.json --split test --limit 1
+```
+
+To avoid repeating the environment setup manually, use the baseline launcher under `deploy/linux/`:
+
+```bash
+cd /root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool
+bash deploy/linux/run_baseline.sh --split test --limit 1
+```
+
+The launcher will:
+
+- activate `inspecsafe-gpu`
+- set `CUDA_HOME=/usr/local/cuda`
+- set `PYTHONPATH` to reuse GroundingDINO and Segment Anything from the old resource workspace plus `program_git/src`
+- prepare the same-name `bert-base-uncased` mapping in `program_git`
+- call the current Linux baseline entry with the default config and dataset root
+
 ## Notes
 
 - AutoDL local disk is convenient, but it should not be your only backup for important data
