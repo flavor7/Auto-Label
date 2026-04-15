@@ -37,7 +37,11 @@ Clone the repo under `/root/autodl-tmp/inspecsafe/program` and keep the dataset 
 
 This branch keeps Linux GPU deployment assets under `deploy/linux/`.
 
+For Linux mainline full-context planning and historical milestones, refer to the workspace-level plan file: `../inspecsafe_auto_label_linux_plan.md`.
+
 For day-to-day instance handling and persistence strategy, also refer to `deploy/linux/AUTODL_USAGE.md`.
+
+For current Linux mainline dual-workspace assumptions, offline BERT hit behavior, and other environment debts that are verified but not yet structurally cleaned up, also refer to `deploy/linux/linux_mainline_environment_debts.md`.
 
 ## Setup steps
 
@@ -126,6 +130,7 @@ The launcher will:
 - set `CUDA_HOME=/usr/local/cuda`
 - set `PYTHONPATH` to reuse GroundingDINO and Segment Anything from the old resource workspace plus `program_git/src`
 - prepare the same-name `bert-base-uncased` mapping in `program_git`
+- prepare the same-name `bert-base-uncased` mapping in the baseline working directory (`inspecsafe_auto_label_tool/bert-base-uncased`) to avoid fallback to Hugging Face
 - call the current Linux baseline entry with the default config and dataset root
 
 ## Notes

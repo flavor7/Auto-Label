@@ -4,6 +4,8 @@
 
 本文件仅覆盖 Linux GPU 部署路线，不覆盖 Colab 路线，也不替代 `inspecsafe_auto_label_colab_plan.md`。
 
+> 说明（文档分层）：本文件作为 Linux 主线“总参考计划”保留尽可能全面的信息；`deploy/linux/README.md` 负责运行入口与最小执行步骤；`deploy/linux/AUTODL_USAGE.md` 负责 AutoDL 主机使用规范；`deploy/linux/linux_mainline_environment_debts.md` 负责记录当前可运行事实下的环境债务与后续收口建议。
+
 ## 一、当前状态
 
 - 当前 Linux 工作区：`D:\HuaweiMoveData\Users\matebook14s\Desktop\program_linux`

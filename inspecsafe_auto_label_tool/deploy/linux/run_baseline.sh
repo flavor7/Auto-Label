@@ -8,6 +8,7 @@ RESOURCE_ROOT="${INSPECSAFE_RESOURCE_ROOT:-/root/autodl-tmp/inspecsafe/program/i
 DATASET_ROOT="${INSPECSAFE_DATASET_ROOT:-/root/autodl-tmp/datasets/InspecSafe-V1/DATA_PATH}"
 CUDA_HOME="${CUDA_HOME:-/usr/local/cuda}"
 BERT_LINK_PATH="${INSPECSAFE_BERT_LINK_PATH:-$(cd "$CODE_ROOT/.." && pwd)/bert-base-uncased}"
+BERT_WORKDIR_LINK_PATH="${INSPECSAFE_BERT_WORKDIR_LINK_PATH:-$CODE_ROOT/bert-base-uncased}"
 BERT_SOURCE_PATH="${INSPECSAFE_BERT_SOURCE_PATH:-$RESOURCE_ROOT/bert-base-uncased}"
 BASELINE_SCRIPT="$CODE_ROOT/scripts/run_linux_baseline_inference.py"
 DEFAULT_CONFIG="${INSPECSAFE_BASELINE_CONFIG:-$CODE_ROOT/configs/linux_inference.default.json}"
@@ -41,6 +42,20 @@ fi
 mkdir -p "$(dirname "$BERT_LINK_PATH")"
 ln -sfn "$BERT_SOURCE_PATH" "$BERT_LINK_PATH"
 
+mkdir -p "$(dirname "$BERT_WORKDIR_LINK_PATH")"
+if [ -L "$BERT_WORKDIR_LINK_PATH" ]; then
+  CURRENT_TARGET="$(readlink -f "$BERT_WORKDIR_LINK_PATH")"
+  if [ "$CURRENT_TARGET" != "$BERT_SOURCE_PATH" ]; then
+    ln -sfn "$BERT_SOURCE_PATH" "$BERT_WORKDIR_LINK_PATH"
+  fi
+elif [ -e "$BERT_WORKDIR_LINK_PATH" ]; then
+  echo "[ERROR] bert workdir path exists but is not a symlink: $BERT_WORKDIR_LINK_PATH"
+  echo "        please move/remove it, then rerun."
+  exit 1
+else
+  ln -sfn "$BERT_SOURCE_PATH" "$BERT_WORKDIR_LINK_PATH"
+fi
+
 source "/root/miniconda3/etc/profile.d/conda.sh"
 conda activate "$ENV_NAME"
 
@@ -52,6 +67,7 @@ echo "[INFO] python:       $(command -v python)"
 echo "[INFO] dataset_root: $DATASET_ROOT"
 echo "[INFO] resource:     $RESOURCE_ROOT"
 echo "[INFO] bert link:    $BERT_LINK_PATH -> $(readlink -f "$BERT_LINK_PATH")"
+echo "[INFO] bert cwd:     $BERT_WORKDIR_LINK_PATH -> $(readlink -f "$BERT_WORKDIR_LINK_PATH")"
 echo "[INFO] config:       $DEFAULT_CONFIG"
 
 exec python "$BASELINE_SCRIPT" \
