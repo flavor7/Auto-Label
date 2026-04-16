@@ -131,6 +131,8 @@ The launcher will:
 - set `PYTHONPATH` to reuse GroundingDINO and Segment Anything from the old resource workspace plus `program_git/src`
 - prepare the same-name `bert-base-uncased` mapping in `program_git`
 - prepare the same-name `bert-base-uncased` mapping in the baseline working directory (`inspecsafe_auto_label_tool/bert-base-uncased`) to avoid fallback to Hugging Face
+- pass a local BERT directory into GroundingDINO config at runtime (default: `PROJECT_ROOT/bert-base-uncased`)
+- support overriding local BERT path via `INSPECSAFE_LOCAL_BERT_PATH=/abs/path/to/bert-base-uncased`
 - call the current Linux baseline entry with the default config and dataset root
 
 ## Notes
