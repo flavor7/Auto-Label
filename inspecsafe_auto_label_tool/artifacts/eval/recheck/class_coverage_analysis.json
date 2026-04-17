@@ -1,0 +1,408 @@
+{
+  "iou_threshold": 0.5,
+  "variants": {
+    "baseline": {
+      "name": "baseline",
+      "images": 3,
+      "tp": 7,
+      "fp": 28,
+      "fn": 2,
+      "precision": 0.2,
+      "recall": 0.7777777777777778,
+      "f1": 0.3181818181818182,
+      "avg_fp_per_image": 9.333333333333334,
+      "gt_present_classes": [
+        "Person",
+        "Pipeline"
+      ],
+      "predicted_classes": [
+        "Direct-Blow Pipe",
+        "Electronic Control Cabinet",
+        "Ladder",
+        "Open Flame",
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Safety Helmet",
+        "Sight Hole Cover",
+        "Valve"
+      ],
+      "tp_hit_classes": [
+        "Person",
+        "Pipeline"
+      ],
+      "class_stats": {
+        "Pipeline": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 2
+        },
+        "Person": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "Safety Helmet": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "Motor": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Electrical Box": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Fire Hydrant": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Open Flame": {
+          "tp": 0,
+          "fp": 6,
+          "fn": 0
+        },
+        "Valve": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "Electronic Control Cabinet": {
+          "tp": 0,
+          "fp": 5,
+          "fn": 0
+        },
+        "Fire Extinguisher": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Smoke": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Pressure Gauge": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "Ladder": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "Direct-Blow Pipe": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "Sight Hole Cover": {
+          "tp": 0,
+          "fp": 4,
+          "fn": 0
+        }
+      },
+      "per_image": [
+        {
+          "asset_id": "test:cigarette_frame_000001",
+          "image_id": 1,
+          "pred_count": 14,
+          "tp": 3,
+          "fp": 11
+        },
+        {
+          "asset_id": "test:cigarette_frame_000002",
+          "image_id": 2,
+          "pred_count": 10,
+          "tp": 2,
+          "fp": 8
+        },
+        {
+          "asset_id": "test:cigarette_frame_000003",
+          "image_id": 3,
+          "pred_count": 11,
+          "tp": 2,
+          "fp": 9
+        }
+      ]
+    },
+    "refinement_v1": {
+      "name": "refinement_v1",
+      "images": 3,
+      "tp": 7,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.875,
+      "recall": 0.7777777777777778,
+      "f1": 0.823529411764706,
+      "avg_fp_per_image": 0.3333333333333333,
+      "gt_present_classes": [
+        "Person",
+        "Pipeline"
+      ],
+      "predicted_classes": [
+        "Direct-Blow Pipe",
+        "Person",
+        "Pipeline"
+      ],
+      "tp_hit_classes": [
+        "Person",
+        "Pipeline"
+      ],
+      "class_stats": {
+        "Pipeline": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 2
+        },
+        "Person": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "Safety Helmet": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Motor": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Electrical Box": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Fire Hydrant": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Open Flame": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Valve": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Electronic Control Cabinet": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Fire Extinguisher": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Smoke": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Pressure Gauge": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Ladder": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Direct-Blow Pipe": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "Sight Hole Cover": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "per_image": [
+        {
+          "asset_id": "test:cigarette_frame_000001",
+          "image_id": 1,
+          "pred_count": 4,
+          "tp": 3,
+          "fp": 1
+        },
+        {
+          "asset_id": "test:cigarette_frame_000002",
+          "image_id": 2,
+          "pred_count": 2,
+          "tp": 2,
+          "fp": 0
+        },
+        {
+          "asset_id": "test:cigarette_frame_000003",
+          "image_id": 3,
+          "pred_count": 2,
+          "tp": 2,
+          "fp": 0
+        }
+      ]
+    },
+    "refinement_v2": {
+      "name": "refinement_v2",
+      "images": 3,
+      "tp": 7,
+      "fp": 12,
+      "fn": 2,
+      "precision": 0.3684210526315789,
+      "recall": 0.7777777777777778,
+      "f1": 0.5,
+      "avg_fp_per_image": 4.0,
+      "gt_present_classes": [
+        "Person",
+        "Pipeline"
+      ],
+      "predicted_classes": [
+        "Electronic Control Cabinet",
+        "Ladder",
+        "Open Flame",
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Valve"
+      ],
+      "tp_hit_classes": [
+        "Person",
+        "Pipeline"
+      ],
+      "class_stats": {
+        "Pipeline": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 2
+        },
+        "Person": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "Safety Helmet": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Motor": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Electrical Box": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Fire Hydrant": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Open Flame": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "Valve": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "Electronic Control Cabinet": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "Fire Extinguisher": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Smoke": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Pressure Gauge": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "Ladder": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "Direct-Blow Pipe": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Sight Hole Cover": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "per_image": [
+        {
+          "asset_id": "test:cigarette_frame_000001",
+          "image_id": 1,
+          "pred_count": 9,
+          "tp": 3,
+          "fp": 6
+        },
+        {
+          "asset_id": "test:cigarette_frame_000002",
+          "image_id": 2,
+          "pred_count": 5,
+          "tp": 2,
+          "fp": 3
+        },
+        {
+          "asset_id": "test:cigarette_frame_000003",
+          "image_id": 3,
+          "pred_count": 5,
+          "tp": 2,
+          "fp": 3
+        }
+      ]
+    }
+  },
+  "summary": {
+    "gt_classes": [
+      "Person",
+      "Pipeline"
+    ],
+    "baseline_tp_hit_classes": [
+      "Person",
+      "Pipeline"
+    ],
+    "refinement_v1_tp_hit_classes": [
+      "Person",
+      "Pipeline"
+    ],
+    "dropped_in_v1_vs_baseline": [],
+    "refinement_v2_tp_hit_classes": [
+      "Person",
+      "Pipeline"
+    ],
+    "dropped_in_v2_vs_baseline": []
+  }
+}

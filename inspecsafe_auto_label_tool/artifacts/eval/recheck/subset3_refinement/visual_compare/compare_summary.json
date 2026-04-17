@@ -1,0 +1,75 @@
+[
+  {
+    "asset_id": "test:cigarette_frame_000001",
+    "baseline_pred_count": 14,
+    "refinement_pred_count": 4,
+    "removed": 10,
+    "baseline_labels": [
+      "Person",
+      "Open Flame",
+      "Open Flame",
+      "Safety Helmet",
+      "Electronic Control Cabinet",
+      "Electronic Control Cabinet",
+      "Pipeline",
+      "Pipeline",
+      "Valve",
+      "Pressure Gauge",
+      "Sight Hole Cover",
+      "Sight Hole Cover",
+      "Direct-Blow Pipe",
+      "Ladder"
+    ],
+    "refinement_labels": [
+      "Person",
+      "Pipeline",
+      "Direct-Blow Pipe",
+      "Pipeline"
+    ]
+  },
+  {
+    "asset_id": "test:cigarette_frame_000002",
+    "baseline_pred_count": 10,
+    "refinement_pred_count": 2,
+    "removed": 8,
+    "baseline_labels": [
+      "Person",
+      "Open Flame",
+      "Open Flame",
+      "Safety Helmet",
+      "Electronic Control Cabinet",
+      "Pipeline",
+      "Valve",
+      "Sight Hole Cover",
+      "Direct-Blow Pipe",
+      "Ladder"
+    ],
+    "refinement_labels": [
+      "Person",
+      "Pipeline"
+    ]
+  },
+  {
+    "asset_id": "test:cigarette_frame_000003",
+    "baseline_pred_count": 11,
+    "refinement_pred_count": 2,
+    "removed": 9,
+    "baseline_labels": [
+      "Person",
+      "Open Flame",
+      "Open Flame",
+      "Safety Helmet",
+      "Electronic Control Cabinet",
+      "Electronic Control Cabinet",
+      "Pipeline",
+      "Pressure Gauge",
+      "Sight Hole Cover",
+      "Direct-Blow Pipe",
+      "Ladder"
+    ],
+    "refinement_labels": [
+      "Person",
+      "Pipeline"
+    ]
+  }
+]

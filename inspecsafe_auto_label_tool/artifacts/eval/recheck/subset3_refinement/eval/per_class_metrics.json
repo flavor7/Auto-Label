@@ -1,0 +1,47 @@
+{
+  "Pipeline": {
+    "AP": 0.00891089108910891
+  },
+  "Person": {
+    "AP": 0.009900990099009901
+  },
+  "Safety Helmet": {
+    "AP": 0.0
+  },
+  "Motor": {
+    "AP": 0.0
+  },
+  "Electrical Box": {
+    "AP": 0.0
+  },
+  "Fire Hydrant": {
+    "AP": 0.0
+  },
+  "Open Flame": {
+    "AP": 0.0
+  },
+  "Valve": {
+    "AP": 0.0
+  },
+  "Electronic Control Cabinet": {
+    "AP": 0.0
+  },
+  "Fire Extinguisher": {
+    "AP": 0.0
+  },
+  "Smoke": {
+    "AP": 0.0
+  },
+  "Pressure Gauge": {
+    "AP": 0.0
+  },
+  "Ladder": {
+    "AP": 0.0
+  },
+  "Direct-Blow Pipe": {
+    "AP": 0.0
+  },
+  "Sight Hole Cover": {
+    "AP": 0.0
+  }
+}

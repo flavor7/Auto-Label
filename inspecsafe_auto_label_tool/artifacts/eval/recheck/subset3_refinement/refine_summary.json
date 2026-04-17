@@ -1,0 +1,12 @@
+{
+  "input_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/subset3_predictions.jsonl",
+  "output_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/subset3_refinement/refined_predictions.jsonl",
+  "records": 3,
+  "predictions_before": 35,
+  "predictions_after": 8,
+  "removed": 27,
+  "default_min_score": 0.5,
+  "pipeline_min_score": 0.35,
+  "pipeline_topk": 2,
+  "nms_iou": 0.7
+}

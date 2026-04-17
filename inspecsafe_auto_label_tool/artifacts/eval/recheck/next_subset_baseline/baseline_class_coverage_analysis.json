@@ -1,0 +1,1858 @@
+{
+  "selection_name": "next_subset_v1_available_multigroup",
+  "iou_threshold": 0.5,
+  "subset_size": 12,
+  "task_group_ids": [
+    "cigarette",
+    "head",
+    "phone",
+    "smog"
+  ],
+  "gt_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Fire Hydrant",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Pipeline",
+    "Pressure Gauge",
+    "Safety Helmet",
+    "Smoke",
+    "Valve"
+  ],
+  "baseline_hit_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Safety Helmet",
+    "Smoke"
+  ],
+  "missed_gt_classes": [
+    "Fire Hydrant",
+    "Pipeline",
+    "Pressure Gauge",
+    "Valve"
+  ],
+  "fp_only_classes": [
+    "Direct-Blow Pipe",
+    "Electronic Control Cabinet",
+    "Ladder",
+    "Sight Hole Cover"
+  ],
+  "totals": {
+    "tp": 33,
+    "fp": 161,
+    "fn": 26,
+    "precision": 0.17010309278350516,
+    "recall": 0.559322033898305,
+    "f1": 0.26086956521739135,
+    "pred_instances_total": 194,
+    "gt_instances_total": 59,
+    "avg_fp_per_image": 13.416666666666666
+  },
+  "per_class_stats": {
+    "Direct-Blow Pipe": {
+      "gt_instances": 0,
+      "gt_image_count": 0,
+      "pred_instances": 11,
+      "tp": 0,
+      "fp": 11,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Electrical Box": {
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "pred_instances": 24,
+      "tp": 3,
+      "fp": 21,
+      "fn": 0,
+      "precision": 0.125,
+      "recall": 1.0,
+      "f1": 0.2222222222222222
+    },
+    "Electronic Control Cabinet": {
+      "gt_instances": 0,
+      "gt_image_count": 0,
+      "pred_instances": 24,
+      "tp": 0,
+      "fp": 24,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Fire Extinguisher": {
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "pred_instances": 8,
+      "tp": 2,
+      "fp": 6,
+      "fn": 1,
+      "precision": 0.25,
+      "recall": 0.6666666666666666,
+      "f1": 0.36363636363636365
+    },
+    "Fire Hydrant": {
+      "gt_instances": 6,
+      "gt_image_count": 6,
+      "pred_instances": 4,
+      "tp": 0,
+      "fp": 4,
+      "fn": 6,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Ladder": {
+      "gt_instances": 0,
+      "gt_image_count": 0,
+      "pred_instances": 3,
+      "tp": 0,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Motor": {
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "pred_instances": 16,
+      "tp": 3,
+      "fp": 13,
+      "fn": 0,
+      "precision": 0.1875,
+      "recall": 1.0,
+      "f1": 0.3157894736842105
+    },
+    "Open Flame": {
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "pred_instances": 8,
+      "tp": 1,
+      "fp": 7,
+      "fn": 2,
+      "precision": 0.125,
+      "recall": 0.3333333333333333,
+      "f1": 0.18181818181818182
+    },
+    "Person": {
+      "gt_instances": 18,
+      "gt_image_count": 12,
+      "pred_instances": 19,
+      "tp": 18,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.9473684210526315,
+      "recall": 1.0,
+      "f1": 0.972972972972973
+    },
+    "Pipeline": {
+      "gt_instances": 4,
+      "gt_image_count": 3,
+      "pred_instances": 13,
+      "tp": 0,
+      "fp": 13,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Pressure Gauge": {
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "pred_instances": 17,
+      "tp": 0,
+      "fp": 17,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Safety Helmet": {
+      "gt_instances": 7,
+      "gt_image_count": 6,
+      "pred_instances": 20,
+      "tp": 5,
+      "fp": 15,
+      "fn": 2,
+      "precision": 0.25,
+      "recall": 0.7142857142857143,
+      "f1": 0.37037037037037035
+    },
+    "Sight Hole Cover": {
+      "gt_instances": 0,
+      "gt_image_count": 0,
+      "pred_instances": 12,
+      "tp": 0,
+      "fp": 12,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Smoke": {
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "pred_instances": 7,
+      "tp": 1,
+      "fp": 6,
+      "fn": 2,
+      "precision": 0.14285714285714285,
+      "recall": 0.3333333333333333,
+      "f1": 0.2
+    },
+    "Valve": {
+      "gt_instances": 6,
+      "gt_image_count": 3,
+      "pred_instances": 8,
+      "tp": 0,
+      "fp": 8,
+      "fn": 6,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "hardest_miss_classes": [
+    {
+      "class_name": "Fire Hydrant",
+      "fn": 6,
+      "gt_instances": 6,
+      "tp": 0
+    },
+    {
+      "class_name": "Valve",
+      "fn": 6,
+      "gt_instances": 6,
+      "tp": 0
+    },
+    {
+      "class_name": "Pipeline",
+      "fn": 4,
+      "gt_instances": 4,
+      "tp": 0
+    },
+    {
+      "class_name": "Pressure Gauge",
+      "fn": 3,
+      "gt_instances": 3,
+      "tp": 0
+    },
+    {
+      "class_name": "Safety Helmet",
+      "fn": 2,
+      "gt_instances": 7,
+      "tp": 5
+    },
+    {
+      "class_name": "Open Flame",
+      "fn": 2,
+      "gt_instances": 3,
+      "tp": 1
+    },
+    {
+      "class_name": "Smoke",
+      "fn": 2,
+      "gt_instances": 3,
+      "tp": 1
+    },
+    {
+      "class_name": "Fire Extinguisher",
+      "fn": 1,
+      "gt_instances": 3,
+      "tp": 2
+    }
+  ],
+  "highest_fp_classes": [
+    {
+      "class_name": "Electronic Control Cabinet",
+      "fp": 24,
+      "pred_instances": 24,
+      "tp": 0
+    },
+    {
+      "class_name": "Electrical Box",
+      "fp": 21,
+      "pred_instances": 24,
+      "tp": 3
+    },
+    {
+      "class_name": "Pressure Gauge",
+      "fp": 17,
+      "pred_instances": 17,
+      "tp": 0
+    },
+    {
+      "class_name": "Safety Helmet",
+      "fp": 15,
+      "pred_instances": 20,
+      "tp": 5
+    },
+    {
+      "class_name": "Motor",
+      "fp": 13,
+      "pred_instances": 16,
+      "tp": 3
+    },
+    {
+      "class_name": "Pipeline",
+      "fp": 13,
+      "pred_instances": 13,
+      "tp": 0
+    },
+    {
+      "class_name": "Sight Hole Cover",
+      "fp": 12,
+      "pred_instances": 12,
+      "tp": 0
+    },
+    {
+      "class_name": "Direct-Blow Pipe",
+      "fp": 11,
+      "pred_instances": 11,
+      "tp": 0
+    },
+    {
+      "class_name": "Valve",
+      "fp": 8,
+      "pred_instances": 8,
+      "tp": 0
+    },
+    {
+      "class_name": "Open Flame",
+      "fp": 7,
+      "pred_instances": 8,
+      "tp": 1
+    },
+    {
+      "class_name": "Fire Extinguisher",
+      "fp": 6,
+      "pred_instances": 8,
+      "tp": 2
+    },
+    {
+      "class_name": "Smoke",
+      "fp": 6,
+      "pred_instances": 7,
+      "tp": 1
+    },
+    {
+      "class_name": "Fire Hydrant",
+      "fp": 4,
+      "pred_instances": 4,
+      "tp": 0
+    },
+    {
+      "class_name": "Ladder",
+      "fp": 3,
+      "pred_instances": 3,
+      "tp": 0
+    },
+    {
+      "class_name": "Person",
+      "fp": 1,
+      "pred_instances": 19,
+      "tp": 18
+    }
+  ],
+  "per_image": [
+    {
+      "asset_id": "test:cigarette_frame_000009",
+      "sample_id": "cigarette_frame_000009",
+      "task_group_id": "cigarette",
+      "gt_classes": [
+        "Electrical Box",
+        "Motor",
+        "Person",
+        "Safety Helmet"
+      ],
+      "gt_class_counts": {
+        "Electrical Box": 1,
+        "Motor": 1,
+        "Person": 1,
+        "Safety Helmet": 1
+      },
+      "pred_count": 19,
+      "tp": 4,
+      "fp": 15,
+      "fn": 0,
+      "fn_labels": [],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8717271089553833,
+          "match": "TP",
+          "best_iou": 0.9803
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.5743550062179565,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Hydrant",
+          "score": 0.49775609374046326,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.4921412765979767,
+          "match": "FP",
+          "best_iou": 0.0513
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.46392902731895447,
+          "match": "TP",
+          "best_iou": 0.8331
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.45469075441360474,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Open Flame",
+          "score": 0.4316197633743286,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.42886772751808167,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.41883614659309387,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Smoke",
+          "score": 0.4048033058643341,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.3988470137119293,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.3955789804458618,
+          "match": "TP",
+          "best_iou": 0.9268
+        },
+        {
+          "label": "Motor",
+          "score": 0.3934679627418518,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.3893517255783081,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.38642412424087524,
+          "match": "TP",
+          "best_iou": 0.8125
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.376670777797699,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Valve",
+          "score": 0.3734559118747711,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.3681732416152954,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.3543497323989868,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    },
+    {
+      "asset_id": "test:cigarette_frame_000010",
+      "sample_id": "cigarette_frame_000010",
+      "task_group_id": "cigarette",
+      "gt_classes": [
+        "Electrical Box",
+        "Motor",
+        "Person",
+        "Safety Helmet"
+      ],
+      "gt_class_counts": {
+        "Electrical Box": 1,
+        "Motor": 1,
+        "Person": 1,
+        "Safety Helmet": 1
+      },
+      "pred_count": 17,
+      "tp": 4,
+      "fp": 13,
+      "fn": 0,
+      "fn_labels": [],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8953512907028198,
+          "match": "TP",
+          "best_iou": 0.9269
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.7967500686645508,
+          "match": "TP",
+          "best_iou": 0.7212
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.6005619764328003,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Hydrant",
+          "score": 0.5375308990478516,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.49042657017707825,
+          "match": "FP",
+          "best_iou": 0.1073
+        },
+        {
+          "label": "Open Flame",
+          "score": 0.45753830671310425,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.4294126033782959,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.42132332921028137,
+          "match": "TP",
+          "best_iou": 0.7499
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.41371047496795654,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.4110196530818939,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.4085081219673157,
+          "match": "TP",
+          "best_iou": 0.5901
+        },
+        {
+          "label": "Valve",
+          "score": 0.4025334417819977,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Smoke",
+          "score": 0.3911493122577667,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.3835412263870239,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.35884302854537964,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.35649746656417847,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.35490724444389343,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    },
+    {
+      "asset_id": "test:cigarette_frame_000011",
+      "sample_id": "cigarette_frame_000011",
+      "task_group_id": "cigarette",
+      "gt_classes": [
+        "Electrical Box",
+        "Motor",
+        "Person",
+        "Safety Helmet"
+      ],
+      "gt_class_counts": {
+        "Electrical Box": 1,
+        "Motor": 1,
+        "Person": 1,
+        "Safety Helmet": 1
+      },
+      "pred_count": 17,
+      "tp": 4,
+      "fp": 13,
+      "fn": 0,
+      "fn_labels": [],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8789588809013367,
+          "match": "TP",
+          "best_iou": 0.9194
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.8061396479606628,
+          "match": "TP",
+          "best_iou": 0.7242
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.6345359683036804,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Hydrant",
+          "score": 0.4998674690723419,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.48863595724105835,
+          "match": "FP",
+          "best_iou": 0.0469
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.4530777633190155,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.43680664896965027,
+          "match": "TP",
+          "best_iou": 0.839
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.42694544792175293,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Open Flame",
+          "score": 0.42427271604537964,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Valve",
+          "score": 0.4194493293762207,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.4157838225364685,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.4108579456806183,
+          "match": "TP",
+          "best_iou": 0.5979
+        },
+        {
+          "label": "Motor",
+          "score": 0.3917022943496704,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.36457982659339905,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Smoke",
+          "score": 0.36241117119789124,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.35513365268707275,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Hydrant",
+          "score": 0.3511943817138672,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    },
+    {
+      "asset_id": "test:head_frame_000009",
+      "sample_id": "head_frame_000009",
+      "task_group_id": "head",
+      "gt_classes": [
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Person",
+        "Safety Helmet"
+      ],
+      "gt_class_counts": {
+        "Fire Extinguisher": 1,
+        "Fire Hydrant": 1,
+        "Person": 2,
+        "Safety Helmet": 2
+      },
+      "pred_count": 22,
+      "tp": 3,
+      "fp": 19,
+      "fn": 3,
+      "fn_labels": [
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Safety Helmet"
+      ],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8611541986465454,
+          "match": "TP",
+          "best_iou": 0.9252
+        },
+        {
+          "label": "Person",
+          "score": 0.85758376121521,
+          "match": "TP",
+          "best_iou": 0.9132
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.8154679536819458,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Extinguisher",
+          "score": 0.7444734573364258,
+          "match": "FP",
+          "best_iou": 0.1893
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.6513378620147705,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.632407009601593,
+          "match": "TP",
+          "best_iou": 0.6952
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.5598828792572021,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.5591387152671814,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.5236729979515076,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.4826524555683136,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.4715503454208374,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.4074625074863434,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Open Flame",
+          "score": 0.40372416377067566,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.3948104977607727,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.3878138065338135,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.3830675184726715,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Valve",
+          "score": 0.3754846453666687,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.3724361062049866,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.3634122908115387,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Smoke",
+          "score": 0.3578818440437317,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.35788169503211975,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.3545052409172058,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    },
+    {
+      "asset_id": "test:head_frame_000010",
+      "sample_id": "head_frame_000010",
+      "task_group_id": "head",
+      "gt_classes": [
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Person",
+        "Safety Helmet"
+      ],
+      "gt_class_counts": {
+        "Fire Extinguisher": 1,
+        "Fire Hydrant": 1,
+        "Person": 2,
+        "Safety Helmet": 1
+      },
+      "pred_count": 15,
+      "tp": 4,
+      "fp": 11,
+      "fn": 1,
+      "fn_labels": [
+        "Fire Hydrant"
+      ],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.7943094372749329,
+          "match": "TP",
+          "best_iou": 0.9615
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.7542238831520081,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Person",
+          "score": 0.7016133069992065,
+          "match": "TP",
+          "best_iou": 0.9461
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.6964569687843323,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.684808075428009,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.6403734683990479,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.630709707736969,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.6115999221801758,
+          "match": "TP",
+          "best_iou": 0.7667
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.5938685536384583,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.5119954943656921,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.4424689710140228,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.4218103885650635,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Extinguisher",
+          "score": 0.4193657338619232,
+          "match": "TP",
+          "best_iou": 0.574
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.4167289137840271,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Extinguisher",
+          "score": 0.3672846853733063,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    },
+    {
+      "asset_id": "test:head_frame_000011",
+      "sample_id": "head_frame_000011",
+      "task_group_id": "head",
+      "gt_classes": [
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Person",
+        "Safety Helmet"
+      ],
+      "gt_class_counts": {
+        "Fire Extinguisher": 1,
+        "Fire Hydrant": 1,
+        "Person": 2,
+        "Safety Helmet": 1
+      },
+      "pred_count": 13,
+      "tp": 3,
+      "fp": 10,
+      "fn": 2,
+      "fn_labels": [
+        "Fire Hydrant",
+        "Safety Helmet"
+      ],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8396725058555603,
+          "match": "TP",
+          "best_iou": 0.9824
+        },
+        {
+          "label": "Person",
+          "score": 0.8168513774871826,
+          "match": "TP",
+          "best_iou": 0.9247
+        },
+        {
+          "label": "Fire Extinguisher",
+          "score": 0.7049864530563354,
+          "match": "TP",
+          "best_iou": 0.6601
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.7019922733306885,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.622244656085968,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.6125516295433044,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.5731925964355469,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.5445706844329834,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.5293880105018616,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.5198327302932739,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.3952544033527374,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.37688761949539185,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.36488988995552063,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    },
+    {
+      "asset_id": "test:phone_frame_000013",
+      "sample_id": "phone_frame_000013",
+      "task_group_id": "phone",
+      "gt_classes": [
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Valve"
+      ],
+      "gt_class_counts": {
+        "Person": 2,
+        "Pipeline": 2,
+        "Pressure Gauge": 1,
+        "Valve": 2
+      },
+      "pred_count": 12,
+      "tp": 2,
+      "fp": 10,
+      "fn": 5,
+      "fn_labels": [
+        "Pipeline",
+        "Pipeline",
+        "Pressure Gauge",
+        "Valve",
+        "Valve"
+      ],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8711798191070557,
+          "match": "TP",
+          "best_iou": 0.9328
+        },
+        {
+          "label": "Person",
+          "score": 0.861366868019104,
+          "match": "TP",
+          "best_iou": 0.8264
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.7254145741462708,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.7026398777961731,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Ladder",
+          "score": 0.6226122975349426,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.5259183645248413,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.4565158784389496,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.4445878565311432,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.42778345942497253,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.3777960538864136,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.3665083646774292,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.36077478528022766,
+          "match": "FP",
+          "best_iou": 0.2791
+        }
+      ]
+    },
+    {
+      "asset_id": "test:phone_frame_000014",
+      "sample_id": "phone_frame_000014",
+      "task_group_id": "phone",
+      "gt_classes": [
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Valve"
+      ],
+      "gt_class_counts": {
+        "Person": 2,
+        "Pipeline": 1,
+        "Pressure Gauge": 1,
+        "Valve": 2
+      },
+      "pred_count": 15,
+      "tp": 2,
+      "fp": 13,
+      "fn": 4,
+      "fn_labels": [
+        "Pipeline",
+        "Pressure Gauge",
+        "Valve",
+        "Valve"
+      ],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8241203427314758,
+          "match": "TP",
+          "best_iou": 0.8906
+        },
+        {
+          "label": "Person",
+          "score": 0.7776973843574524,
+          "match": "TP",
+          "best_iou": 0.9006
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.7456411719322205,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.7431265711784363,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.6758207678794861,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Ladder",
+          "score": 0.6464643478393555,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.4675089120864868,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.4661247134208679,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.4511556625366211,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.4285980761051178,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.4217654764652252,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.4063199460506439,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.39971908926963806,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.3937605917453766,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.3750176727771759,
+          "match": "FP",
+          "best_iou": 0.0994
+        }
+      ]
+    },
+    {
+      "asset_id": "test:phone_frame_000015",
+      "sample_id": "phone_frame_000015",
+      "task_group_id": "phone",
+      "gt_classes": [
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Valve"
+      ],
+      "gt_class_counts": {
+        "Person": 2,
+        "Pipeline": 1,
+        "Pressure Gauge": 1,
+        "Valve": 2
+      },
+      "pred_count": 15,
+      "tp": 2,
+      "fp": 13,
+      "fn": 4,
+      "fn_labels": [
+        "Pipeline",
+        "Pressure Gauge",
+        "Valve",
+        "Valve"
+      ],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8424650430679321,
+          "match": "TP",
+          "best_iou": 0.9371
+        },
+        {
+          "label": "Person",
+          "score": 0.7596674561500549,
+          "match": "TP",
+          "best_iou": 0.9
+        },
+        {
+          "label": "Ladder",
+          "score": 0.6194968223571777,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.5691846609115601,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.5456617474555969,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.4669444262981415,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.4538775682449341,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.4429231882095337,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.44222185015678406,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.4254208505153656,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.42526179552078247,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.3938063681125641,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.38511720299720764,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.37884771823883057,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.35713738203048706,
+          "match": "FP",
+          "best_iou": 0.1006
+        }
+      ]
+    },
+    {
+      "asset_id": "test:smog_frame_000005",
+      "sample_id": "smog_frame_000005",
+      "task_group_id": "smog",
+      "gt_classes": [
+        "Fire Hydrant",
+        "Open Flame",
+        "Person",
+        "Smoke"
+      ],
+      "gt_class_counts": {
+        "Fire Hydrant": 1,
+        "Open Flame": 1,
+        "Person": 1,
+        "Smoke": 1
+      },
+      "pred_count": 17,
+      "tp": 1,
+      "fp": 16,
+      "fn": 3,
+      "fn_labels": [
+        "Fire Hydrant",
+        "Open Flame",
+        "Smoke"
+      ],
+      "prediction_details": [
+        {
+          "label": "Safety Helmet",
+          "score": 0.800509512424469,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Extinguisher",
+          "score": 0.6149879693984985,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Person",
+          "score": 0.48610031604766846,
+          "match": "TP",
+          "best_iou": 0.9241
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.47726085782051086,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.44479575753211975,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.4414115846157074,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Open Flame",
+          "score": 0.403253972530365,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.3936571776866913,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Extinguisher",
+          "score": 0.3912329077720642,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.39093804359436035,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.3841003179550171,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.38319796323776245,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Smoke",
+          "score": 0.38194048404693604,
+          "match": "FP",
+          "best_iou": 0.1397
+        },
+        {
+          "label": "Valve",
+          "score": 0.3815619647502899,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.38069409132003784,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Person",
+          "score": 0.3598943054676056,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.3594532012939453,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    },
+    {
+      "asset_id": "test:smog_frame_000007",
+      "sample_id": "smog_frame_000007",
+      "task_group_id": "smog",
+      "gt_classes": [
+        "Fire Hydrant",
+        "Open Flame",
+        "Person",
+        "Smoke"
+      ],
+      "gt_class_counts": {
+        "Fire Hydrant": 1,
+        "Open Flame": 1,
+        "Person": 1,
+        "Smoke": 1
+      },
+      "pred_count": 16,
+      "tp": 2,
+      "fp": 14,
+      "fn": 2,
+      "fn_labels": [
+        "Fire Hydrant",
+        "Open Flame"
+      ],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.7439790368080139,
+          "match": "TP",
+          "best_iou": 0.9108
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.5024023056030273,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Smoke",
+          "score": 0.49945068359375,
+          "match": "TP",
+          "best_iou": 0.9028
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.4986182451248169,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Extinguisher",
+          "score": 0.45767930150032043,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.45142292976379395,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Valve",
+          "score": 0.45090046525001526,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Open Flame",
+          "score": 0.4319884777069092,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.42282047867774963,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.3948194086551666,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.3936654031276703,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.38054582476615906,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.3617974519729614,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.35957884788513184,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.3571532368659973,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.35577836632728577,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    },
+    {
+      "asset_id": "test:smog_frame_000010",
+      "sample_id": "smog_frame_000010",
+      "task_group_id": "smog",
+      "gt_classes": [
+        "Fire Hydrant",
+        "Open Flame",
+        "Person",
+        "Smoke"
+      ],
+      "gt_class_counts": {
+        "Fire Hydrant": 1,
+        "Open Flame": 1,
+        "Person": 1,
+        "Smoke": 1
+      },
+      "pred_count": 16,
+      "tp": 2,
+      "fp": 14,
+      "fn": 2,
+      "fn_labels": [
+        "Fire Hydrant",
+        "Smoke"
+      ],
+      "prediction_details": [
+        {
+          "label": "Person",
+          "score": 0.8788779377937317,
+          "match": "TP",
+          "best_iou": 0.8734
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.8134257793426514,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pipeline",
+          "score": 0.503362238407135,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electrical Box",
+          "score": 0.4927840828895569,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Fire Extinguisher",
+          "score": 0.4726894497871399,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Sight Hole Cover",
+          "score": 0.46030423045158386,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Electronic Control Cabinet",
+          "score": 0.4518410563468933,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Direct-Blow Pipe",
+          "score": 0.4188838005065918,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Valve",
+          "score": 0.3987218141555786,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Smoke",
+          "score": 0.3910716772079468,
+          "match": "FP",
+          "best_iou": 0.031
+        },
+        {
+          "label": "Open Flame",
+          "score": 0.38811567425727844,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Motor",
+          "score": 0.3808591067790985,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Open Flame",
+          "score": 0.3755547106266022,
+          "match": "TP",
+          "best_iou": 0.6508
+        },
+        {
+          "label": "Valve",
+          "score": 0.3734246790409088,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.368386447429657,
+          "match": "FP",
+          "best_iou": 0.0
+        },
+        {
+          "label": "Pressure Gauge",
+          "score": 0.35633328557014465,
+          "match": "FP",
+          "best_iou": 0.0
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "is_better_than_subset3_for_generalization": true,
+    "reason": "GT coverage expands from 2 classes to 11 classes and spans 4 task groups, so category-level miss/FP analysis is much more informative than subset3."
+  }
+}

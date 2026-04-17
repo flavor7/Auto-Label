@@ -1,0 +1,69 @@
+{
+  "input_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_baseline/baseline_subset_predictions.jsonl",
+  "output_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_refinement_v2/refined_predictions.jsonl",
+  "records": 12,
+  "predictions_before": 194,
+  "predictions_after": 111,
+  "removed": 83,
+  "base_refinement": "generalize_v1",
+  "default_min_score": 0.35,
+  "nms_iou": 0.6,
+  "targeted_high_fn_strategy": {
+    "focus_classes": [
+      "Fire Hydrant",
+      "Valve",
+      "Pipeline",
+      "Pressure Gauge"
+    ],
+    "implemented_rescue": {
+      "target_label": "Fire Hydrant",
+      "source_labels": [
+        "Electrical Box"
+      ],
+      "source_min_score": 0.39,
+      "aspect_ratio_range": [
+        0.54,
+        0.6
+      ],
+      "area_range": [
+        90000.0,
+        110000.0
+      ],
+      "native_fire_hydrant_policy": "drop giant native Fire Hydrant boxes that do not match the rescue geometry envelope"
+    }
+  },
+  "rescue_totals": {
+    "removed_native_fire_hydrant": 3,
+    "added_fire_hydrant_rescues": 3
+  },
+  "kept_by_label": {
+    "Electrical Box": 6,
+    "Fire Extinguisher": 7,
+    "Fire Hydrant": 3,
+    "Motor": 8,
+    "Open Flame": 8,
+    "Person": 19,
+    "Pipeline": 13,
+    "Pressure Gauge": 17,
+    "Safety Helmet": 15,
+    "Smoke": 7,
+    "Valve": 8
+  },
+  "removed_by_label": {
+    "Direct-Blow Pipe": 11,
+    "Electrical Box": 18,
+    "Electronic Control Cabinet": 24,
+    "Fire Extinguisher": 1,
+    "Fire Hydrant": 4,
+    "Ladder": 3,
+    "Motor": 8,
+    "Open Flame": 0,
+    "Person": 0,
+    "Pipeline": 0,
+    "Pressure Gauge": 0,
+    "Safety Helmet": 5,
+    "Sight Hole Cover": 12,
+    "Smoke": 0,
+    "Valve": 0
+  }
+}

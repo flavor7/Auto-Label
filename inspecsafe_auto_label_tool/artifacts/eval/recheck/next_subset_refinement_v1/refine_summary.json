@@ -1,0 +1,74 @@
+{
+  "input_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_baseline/baseline_subset_predictions.jsonl",
+  "output_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_refinement_v1/refined_predictions.jsonl",
+  "records": 12,
+  "predictions_before": 194,
+  "predictions_after": 111,
+  "removed": 83,
+  "default_min_score": 0.35,
+  "class_min_score": {
+    "Electronic Control Cabinet": 0.7,
+    "Ladder": 0.65,
+    "Direct-Blow Pipe": 0.52,
+    "Sight Hole Cover": 0.5,
+    "Electrical Box": 0.38,
+    "Safety Helmet": 0.46,
+    "Motor": 0.395
+  },
+  "topk_by_label": {
+    "Electronic Control Cabinet": 1,
+    "Ladder": 1,
+    "Direct-Blow Pipe": 1,
+    "Sight Hole Cover": 1,
+    "Electrical Box": 3,
+    "Safety Helmet": 2
+  },
+  "geometry_guards": {
+    "Electrical Box": {
+      "aspect_ratio_range": [
+        0.38,
+        0.5
+      ],
+      "area_range": [
+        120000.0,
+        200000.0
+      ]
+    }
+  },
+  "nms_iou": 0.6,
+  "cross_label_rules": [
+    "Pipeline vs Direct-Blow Pipe: IoU>=0.7 keep Pipeline",
+    "Pressure Gauge vs Sight Hole Cover: IoU>=0.65 keep Pressure Gauge",
+    "Electrical Box vs Electronic Control Cabinet: IoU>=0.65 keep Electrical Box"
+  ],
+  "kept_by_label": {
+    "Electrical Box": 6,
+    "Fire Extinguisher": 7,
+    "Fire Hydrant": 3,
+    "Motor": 8,
+    "Open Flame": 8,
+    "Person": 19,
+    "Pipeline": 13,
+    "Pressure Gauge": 17,
+    "Safety Helmet": 15,
+    "Smoke": 7,
+    "Valve": 8
+  },
+  "removed_by_label": {
+    "Direct-Blow Pipe": 11,
+    "Electrical Box": 18,
+    "Electronic Control Cabinet": 24,
+    "Fire Extinguisher": 1,
+    "Fire Hydrant": 1,
+    "Ladder": 3,
+    "Motor": 8,
+    "Open Flame": 0,
+    "Person": 0,
+    "Pipeline": 0,
+    "Pressure Gauge": 0,
+    "Safety Helmet": 5,
+    "Sight Hole Cover": 12,
+    "Smoke": 0,
+    "Valve": 0
+  }
+}

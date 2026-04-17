@@ -1,0 +1,503 @@
+{
+  "baseline": {
+    "tp": 33,
+    "fp": 161,
+    "fn": 26,
+    "precision": 0.17010309278350516,
+    "recall": 0.559322033898305,
+    "f1": 0.26086956521739135,
+    "avg_fp_per_image": 13.416666666666666,
+    "pred_total": 194
+  },
+  "refinement_v1": {
+    "tp": 33,
+    "fp": 78,
+    "fn": 26,
+    "precision": 0.2972972972972973,
+    "recall": 0.559322033898305,
+    "f1": 0.38823529411764707,
+    "avg_fp_per_image": 6.5,
+    "pred_total": 111
+  },
+  "refinement_v2": {
+    "tp": 36,
+    "fp": 75,
+    "fn": 23,
+    "precision": 0.32432432432432434,
+    "recall": 0.6101694915254238,
+    "f1": 0.42352941176470593,
+    "avg_fp_per_image": 6.25,
+    "pred_total": 111
+  },
+  "delta_v1_vs_baseline": {
+    "tp": 0,
+    "fp": -83,
+    "fn": 0,
+    "precision": 0.12719420451379215,
+    "recall": 0.0,
+    "f1": 0.12736572890025571,
+    "avg_fp_per_image": -6.916666666666666,
+    "pred_total": -83
+  },
+  "delta_v2_vs_baseline": {
+    "tp": 3,
+    "fp": -86,
+    "fn": -3,
+    "precision": 0.15422123154081918,
+    "recall": 0.05084745762711873,
+    "f1": 0.16265984654731458,
+    "avg_fp_per_image": -7.166666666666666,
+    "pred_total": -83
+  },
+  "delta_v2_vs_v1": {
+    "tp": 3,
+    "fp": -3,
+    "fn": -3,
+    "precision": 0.02702702702702703,
+    "recall": 0.05084745762711873,
+    "f1": 0.035294117647058865,
+    "avg_fp_per_image": -0.25,
+    "pred_total": 0
+  },
+  "gt_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Fire Hydrant",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Pipeline",
+    "Pressure Gauge",
+    "Safety Helmet",
+    "Smoke",
+    "Valve"
+  ],
+  "baseline_tp_hit_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Safety Helmet",
+    "Smoke"
+  ],
+  "refinement_v1_tp_hit_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Safety Helmet",
+    "Smoke"
+  ],
+  "refinement_v2_tp_hit_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Fire Hydrant",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Safety Helmet",
+    "Smoke"
+  ],
+  "dropped_tp_hit_classes_v1_vs_baseline": [],
+  "dropped_tp_hit_classes_v2_vs_baseline": [],
+  "new_tp_hit_classes_v2_vs_baseline": [
+    "Fire Hydrant"
+  ],
+  "high_fn_focus": {
+    "Fire Hydrant": {
+      "baseline": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 6
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 6
+      },
+      "refinement_v2": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 3
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -1,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 3,
+        "fp": -4,
+        "fn": -3
+      },
+      "delta_v2_vs_v1": {
+        "tp": 3,
+        "fp": -3,
+        "fn": -3
+      }
+    },
+    "Valve": {
+      "baseline": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 6
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 6
+      },
+      "refinement_v2": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 6
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Pipeline": {
+      "baseline": {
+        "tp": 0,
+        "fp": 13,
+        "fn": 4
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 13,
+        "fn": 4
+      },
+      "refinement_v2": {
+        "tp": 0,
+        "fp": 13,
+        "fn": 4
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Pressure Gauge": {
+      "baseline": {
+        "tp": 0,
+        "fp": 17,
+        "fn": 3
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 17,
+        "fn": 3
+      },
+      "refinement_v2": {
+        "tp": 0,
+        "fp": 17,
+        "fn": 3
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "high_fp_focus": {
+    "Electronic Control Cabinet": {
+      "baseline": {
+        "tp": 0,
+        "fp": 24,
+        "fn": 0
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "refinement_v2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -24,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -24,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Electrical Box": {
+      "baseline": {
+        "tp": 3,
+        "fp": 21,
+        "fn": 0
+      },
+      "refinement_v1": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 0
+      },
+      "refinement_v2": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -18,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -18,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Pressure Gauge": {
+      "baseline": {
+        "tp": 0,
+        "fp": 17,
+        "fn": 3
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 17,
+        "fn": 3
+      },
+      "refinement_v2": {
+        "tp": 0,
+        "fp": 17,
+        "fn": 3
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Safety Helmet": {
+      "baseline": {
+        "tp": 5,
+        "fp": 15,
+        "fn": 2
+      },
+      "refinement_v1": {
+        "tp": 5,
+        "fp": 10,
+        "fn": 2
+      },
+      "refinement_v2": {
+        "tp": 5,
+        "fp": 10,
+        "fn": 2
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -5,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -5,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Motor": {
+      "baseline": {
+        "tp": 3,
+        "fp": 13,
+        "fn": 0
+      },
+      "refinement_v1": {
+        "tp": 3,
+        "fp": 5,
+        "fn": 0
+      },
+      "refinement_v2": {
+        "tp": 3,
+        "fp": 5,
+        "fn": 0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -8,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -8,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Direct-Blow Pipe": {
+      "baseline": {
+        "tp": 0,
+        "fp": 11,
+        "fn": 0
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "refinement_v2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -11,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -11,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Ladder": {
+      "baseline": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 0
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "refinement_v2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -3,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -3,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "Sight Hole Cover": {
+      "baseline": {
+        "tp": 0,
+        "fp": 12,
+        "fn": 0
+      },
+      "refinement_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "refinement_v2": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -12,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -12,
+        "fn": 0
+      },
+      "delta_v2_vs_v1": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "decision_hint": {
+    "high_fn_improved_classes_in_v2": [
+      "Fire Hydrant"
+    ],
+    "fp_return_vs_v1_total": -3,
+    "coverage_drop_v2_vs_baseline": []
+  }
+}

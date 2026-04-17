@@ -1,0 +1,122 @@
+{
+  "selection_name": "next_subset_v1_available_multigroup",
+  "subset_size": 12,
+  "task_group_ids": [
+    "cigarette",
+    "head",
+    "phone",
+    "smog"
+  ],
+  "gt_class_count": 11,
+  "gt_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Fire Hydrant",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Pipeline",
+    "Pressure Gauge",
+    "Safety Helmet",
+    "Smoke",
+    "Valve"
+  ],
+  "baseline_hit_class_count": 7,
+  "baseline_hit_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Safety Helmet",
+    "Smoke"
+  ],
+  "missed_gt_classes": [
+    "Fire Hydrant",
+    "Pipeline",
+    "Pressure Gauge",
+    "Valve"
+  ],
+  "top_miss_classes": [
+    {
+      "class_name": "Fire Hydrant",
+      "fn": 6,
+      "gt_instances": 6,
+      "tp": 0
+    },
+    {
+      "class_name": "Valve",
+      "fn": 6,
+      "gt_instances": 6,
+      "tp": 0
+    },
+    {
+      "class_name": "Pipeline",
+      "fn": 4,
+      "gt_instances": 4,
+      "tp": 0
+    },
+    {
+      "class_name": "Pressure Gauge",
+      "fn": 3,
+      "gt_instances": 3,
+      "tp": 0
+    },
+    {
+      "class_name": "Safety Helmet",
+      "fn": 2,
+      "gt_instances": 7,
+      "tp": 5
+    }
+  ],
+  "top_fp_classes": [
+    {
+      "class_name": "Electronic Control Cabinet",
+      "fp": 24,
+      "pred_instances": 24,
+      "tp": 0
+    },
+    {
+      "class_name": "Electrical Box",
+      "fp": 21,
+      "pred_instances": 24,
+      "tp": 3
+    },
+    {
+      "class_name": "Pressure Gauge",
+      "fp": 17,
+      "pred_instances": 17,
+      "tp": 0
+    },
+    {
+      "class_name": "Safety Helmet",
+      "fp": 15,
+      "pred_instances": 20,
+      "tp": 5
+    },
+    {
+      "class_name": "Motor",
+      "fp": 13,
+      "pred_instances": 16,
+      "tp": 3
+    }
+  ],
+  "totals": {
+    "tp": 33,
+    "fp": 161,
+    "fn": 26,
+    "precision": 0.17010309278350516,
+    "recall": 0.559322033898305,
+    "f1": 0.26086956521739135,
+    "pred_instances_total": 194,
+    "gt_instances_total": 59,
+    "avg_fp_per_image": 13.416666666666666
+  },
+  "artifacts": {
+    "selection_json": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_selection.json",
+    "selection_md": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_selection.md",
+    "baseline_subset_predictions_jsonl": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_baseline/baseline_subset_predictions.jsonl",
+    "baseline_class_coverage_analysis_json": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_baseline/baseline_class_coverage_analysis.json",
+    "baseline_class_coverage_analysis_md": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_baseline/baseline_class_coverage_analysis.md"
+  }
+}

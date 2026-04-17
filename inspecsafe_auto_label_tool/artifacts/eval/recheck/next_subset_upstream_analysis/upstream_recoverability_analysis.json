@@ -1,0 +1,551 @@
+{
+  "input_paths": {
+    "gt_coco": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/gt/inspecsafe_coco_gt_15cls.json",
+    "baseline": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_baseline/baseline_subset_predictions.jsonl",
+    "refinement_v1": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_refinement_v1/refined_predictions.jsonl",
+    "refinement_v2": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_refinement_v2/refined_predictions.jsonl",
+    "root_cause_json": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_error_analysis/high_fn_root_cause_analysis.json"
+  },
+  "stable_conclusion": {
+    "Valve": {
+      "primary": "A. 候选缺失",
+      "reason": "Valve 在 baseline 里没有同类候选，也没有能与 GT 形成有效重叠的错类候选。"
+    },
+    "Pipeline": {
+      "primary": "D. 几何位置偏差太大，无法命中",
+      "reason": "Pipeline 的同类候选存在且保留到了 v1/v2，但 IoU 长期停留在命中阈值以下，属于定位/尺度偏差主导。"
+    },
+    "Pressure Gauge": {
+      "primary": "D. 几何位置偏差太大，无法命中",
+      "reason": "Pressure Gauge 的同类候选存在且保留到了 v1/v2，但与 GT 基本不重叠，说明是严重的几何偏差而不是规则过滤。"
+    }
+  },
+  "classes": {
+    "Valve": {
+      "class_name": "Valve",
+      "gt_count": 6,
+      "asset_ids": [
+        "test:phone_frame_000013",
+        "test:phone_frame_000014",
+        "test:phone_frame_000015"
+      ],
+      "same_label_candidate_count": 0,
+      "has_reusable_nearby_wrong_candidate": false,
+      "nearby_wrong_candidate_examples": [
+        {
+          "label": "Safety Helmet",
+          "score": 0.4565158784389496,
+          "bbox": [
+            1366.8067626953125,
+            608.1937866210938,
+            1414.1370849609375,
+            646.4151000976562
+          ],
+          "iou": 0.0,
+          "center_distance_px": 136.8124684971851,
+          "center_distance_norm": 1.3695500626686272,
+          "center_offset": {
+            "dx": -136.39761085008263,
+            "dy": 10.646280603229116
+          },
+          "size_ratio": {
+            "width_ratio": 0.6480991973665027,
+            "height_ratio": 0.5607520280724491
+          },
+          "kept_in_v1": false,
+          "kept_in_v2": false
+        },
+        {
+          "label": "Safety Helmet",
+          "score": 0.7431265711784363,
+          "bbox": [
+            1306.6353759765625,
+            627.6294555664062,
+            1358.1241455078125,
+            682.9757690429688
+          ],
+          "iou": 0.0,
+          "center_distance_px": 198.29186984491824,
+          "center_distance_norm": 1.9849845979379765,
+          "center_offset": {
+            "dx": -194.48977393602013,
+            "dy": 38.644449548541616
+          },
+          "size_ratio": {
+            "width_ratio": 0.705041263385349,
+            "height_ratio": 0.811996101268134
+          },
+          "kept_in_v1": true,
+          "kept_in_v2": true
+        }
+      ],
+      "nearest_wrong_label_counts": {
+        "Safety Helmet": 2
+      },
+      "primary_upstream_issue": "candidate_generation_missing",
+      "diagnosis": "候选生成缺失主导。没有同类候选，也没有与 GT 接近重叠的局部错类候选可直接复用。",
+      "lightweight_rule_recoverable": false,
+      "likely_next_direction": "检查小目标/部件级候选生成与召回，而不是继续放宽后处理规则。"
+    },
+    "Pipeline": {
+      "class_name": "Pipeline",
+      "gt_count": 4,
+      "asset_ids": [
+        "test:phone_frame_000013",
+        "test:phone_frame_000014",
+        "test:phone_frame_000015"
+      ],
+      "same_label_candidate_count": 4,
+      "score_summary": {
+        "min": 0.35713738203048706,
+        "median": 0.36077478528022766,
+        "max": 0.3750176727771759
+      },
+      "iou_summary": {
+        "min": 0.04889817560596085,
+        "median": 0.10000827495184819,
+        "max": 0.27908678811448223
+      },
+      "width_ratio_summary": {
+        "min": 0.48047682639533945,
+        "median": 0.48177042540063053,
+        "max": 0.485186148469433
+      },
+      "height_ratio_summary": {
+        "min": 0.2069438977001725,
+        "median": 0.22924587389362522,
+        "max": 0.5778172986751976
+      },
+      "center_dx_summary": {
+        "min": 224.23133696993682,
+        "median": 228.0694621192563,
+        "max": 230.4489110282201
+      },
+      "center_dy_summary": {
+        "min": -351.7959947596811,
+        "median": -280.95954678265593,
+        "max": -10.87153027264614
+      },
+      "primary_upstream_issue": "localization_extent_quality",
+      "geometry_failure_mode": "长条目标被截短 / 覆盖范围不足",
+      "diagnosis": "同类候选已经存在并保留到 v1/v2，但宽度和高度覆盖明显不足，属于大结构范围/extent 回归失败，不是规则过滤。",
+      "lightweight_rule_recoverable": false,
+      "likely_next_direction": "优先检查长条大结构目标的范围回归、截短现象和 coverage 表达。",
+      "representative_examples": [
+        {
+          "asset_id": "test:phone_frame_000013",
+          "gt_bbox": [
+            9.740698985343855,
+            3.652762119503946,
+            1900.6538895152198,
+            295.87373167981957
+          ],
+          "candidate_score": 0.36077478528022766,
+          "candidate_iou": 0.27908678811448223,
+          "width_ratio": 0.4830017875102807,
+          "height_ratio": 0.5778172986751976,
+          "center_dx": 224.23133696993682,
+          "center_dy": -10.87153027264614
+        },
+        {
+          "asset_id": "test:phone_frame_000013",
+          "gt_bbox": [
+            0.0,
+            152.19842164599774,
+            1910.3945885005637,
+            680.6313416009019
+          ],
+          "candidate_score": 0.36077478528022766,
+          "candidate_iou": 0.04889817560596085,
+          "width_ratio": 0.48053906329098034,
+          "height_ratio": 0.25117997062267083,
+          "center_dx": 229.10168646260877,
+          "center_dy": -351.7959947596811
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "gt_bbox": [
+            1.2175873731679818,
+            6.087936865839909,
+            1911.6121758737315,
+            830.3945885005637
+          ],
+          "candidate_score": 0.3750176727771759,
+          "candidate_iou": 0.09943174720886067,
+          "width_ratio": 0.48047682639533945,
+          "height_ratio": 0.2069438977001725,
+          "center_dx": 227.0372377759038,
+          "center_dy": -280.4041276004968
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "gt_bbox": [
+            7.305524239007891,
+            10.958286358511836,
+            1892.130777903044,
+            821.8714768883879
+          ],
+          "candidate_score": 0.35713738203048706,
+          "candidate_iou": 0.1005848026948357,
+          "width_ratio": 0.485186148469433,
+          "height_ratio": 0.20731177716457957,
+          "center_dx": 230.4489110282201,
+          "center_dy": -281.51496596481513
+        }
+      ]
+    },
+    "Pressure Gauge": {
+      "class_name": "Pressure Gauge",
+      "gt_count": 3,
+      "asset_ids": [
+        "test:phone_frame_000013",
+        "test:phone_frame_000014",
+        "test:phone_frame_000015"
+      ],
+      "same_label_candidate_count": 3,
+      "score_summary": {
+        "min": 0.4669444262981415,
+        "median": 0.4675089120864868,
+        "max": 0.5259183645248413
+      },
+      "iou_summary": {
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "width_ratio_summary": {
+        "min": 0.5842156699994286,
+        "median": 0.5847709172625059,
+        "max": 0.5851520525731075
+      },
+      "height_ratio_summary": {
+        "min": 2.5017883002669747,
+        "median": 2.5080415066613115,
+        "max": 2.571229321515121
+      },
+      "center_dx_summary": {
+        "min": -94.52325140972266,
+        "median": -2.4134491636289113,
+        "max": -2.2427338315976613
+      },
+      "center_dy_summary": {
+        "min": 164.25738541285466,
+        "median": 166.20245377222966,
+        "max": 166.20941178004216
+      },
+      "primary_upstream_issue": "localization_quality",
+      "geometry_failure_mode": "误定位到下方附近部件，且尺度过高",
+      "diagnosis": "同类候选存在且保留到了 v1/v2，但中心持续向下偏移约一百多像素，框高约为 GT 的 2.5 倍，说明是稳定误定位而不是规则过滤。",
+      "lightweight_rule_recoverable": false,
+      "likely_next_direction": "优先检查小部件定位和 bbox 回归，尤其是为什么候选持续落在更低、更高的邻近部件上。",
+      "representative_examples": [
+        {
+          "asset_id": "test:phone_frame_000013",
+          "gt_bbox": [
+            927.1566316691662,
+            556.3804746153949,
+            114.98079807486283,
+            28.48148209193846
+          ],
+          "candidate_score": 0.5259183645248413,
+          "candidate_iou": 0.0,
+          "width_ratio": 0.5851520525731075,
+          "height_ratio": 2.5080415066613115,
+          "center_dx": -2.2427338315976613,
+          "center_dy": 166.20941178004216,
+          "nearest_local_wrong_candidates": [
+            {
+              "label": "Motor",
+              "score": 0.3665083646774292,
+              "bbox": [
+                931.72119140625,
+                667.333251953125,
+                1020.4674072265625,
+                772.78662109375
+              ],
+              "iou": 0.0,
+              "center_distance_px": 149.68326729172324,
+              "center_distance_norm": 1.2636211615400412,
+              "center_offset": {
+                "dx": -8.552731390191411,
+                "dy": 149.4387208620734
+              },
+              "size_ratio": {
+                "width_ratio": 0.771835100348936,
+                "height_ratio": 3.702523934682214
+              },
+              "kept_in_v1": false,
+              "kept_in_v2": false
+            },
+            {
+              "label": "Sight Hole Cover",
+              "score": 0.4445878565311432,
+              "bbox": [
+                947.8234252929688,
+                701.967041015625,
+                1017.5864868164062,
+                773.3631591796875
+              ],
+              "iou": 0.0,
+              "center_distance_px": 167.05517346529237,
+              "center_distance_norm": 1.4102742153809087,
+              "center_offset": {
+                "dx": -1.9420746519101613,
+                "dy": 167.04388443629216
+              },
+              "size_ratio": {
+                "width_ratio": 0.6067366263888295,
+                "height_ratio": 2.5067557205624076
+              },
+              "kept_in_v1": false,
+              "kept_in_v2": false
+            },
+            {
+              "label": "Safety Helmet",
+              "score": 0.7026398777961731,
+              "bbox": [
+                862.7374877929688,
+                691.7590942382812,
+                924.2879028320312,
+                764.4567260742188
+              ],
+              "iou": 0.0,
+              "center_distance_px": 181.9547362138436,
+              "center_distance_norm": 1.5360558282987349,
+              "center_offset": {
+                "dx": -91.13433539409766,
+                "dy": 157.4866944948859
+              },
+              "size_ratio": {
+                "width_ratio": 0.535310382860516,
+                "height_ratio": 2.5524525585174587
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            }
+          ]
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "gt_bbox": [
+            927.1566316691662,
+            556.3804746153949,
+            114.98079807486283,
+            28.48148209193846
+          ],
+          "candidate_score": 0.4675089120864868,
+          "candidate_iou": 0.0,
+          "width_ratio": 0.5842156699994286,
+          "height_ratio": 2.5017883002669747,
+          "center_dx": -2.4134491636289113,
+          "center_dy": 166.20245377222966,
+          "nearest_local_wrong_candidates": [
+            {
+              "label": "Motor",
+              "score": 0.4285980761051178,
+              "bbox": [
+                811.803955078125,
+                488.0804443359375,
+                1071.5809326171875,
+                777.0357666015625
+              ],
+              "iou": 0.04362712015724376,
+              "center_distance_px": 75.37423201091077,
+              "center_distance_norm": 0.6363067584447509,
+              "center_offset": {
+                "dx": -42.95458685894141,
+                "dy": 61.93688980738591
+              },
+              "size_ratio": {
+                "width_ratio": 2.2593074834106157,
+                "height_ratio": 10.145375206700088
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            },
+            {
+              "label": "Electronic Control Cabinet",
+              "score": 0.4511556625366211,
+              "bbox": [
+                812.6947021484375,
+                510.388671875,
+                1073.1402587890625,
+                778.011474609375
+              ],
+              "iou": 0.04698376726492419,
+              "center_distance_px": 84.58843683360124,
+              "center_distance_norm": 0.7140927689413282,
+              "center_offset": {
+                "dx": -41.72955023784766,
+                "dy": 73.57885758082341
+              },
+              "size_ratio": {
+                "width_ratio": 2.2651221856283477,
+                "height_ratio": 9.396379088366482
+              },
+              "kept_in_v1": false,
+              "kept_in_v2": false
+            },
+            {
+              "label": "Sight Hole Cover",
+              "score": 0.3937605917453766,
+              "bbox": [
+                948.5143432617188,
+                702.632080078125,
+                1016.7299194335938,
+                772.71240234375
+              ],
+              "iou": 0.0,
+              "center_distance_px": 167.06329744913475,
+              "center_distance_norm": 1.410342797782168,
+              "center_offset": {
+                "dx": -2.0248993589414113,
+                "dy": 167.0510255495734
+              },
+              "size_ratio": {
+                "width_ratio": 0.5932779847941265,
+                "height_ratio": 2.460557426028784
+              },
+              "kept_in_v1": false,
+              "kept_in_v2": false
+            }
+          ]
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "gt_bbox": [
+            927.1566316691662,
+            556.3804746153949,
+            114.98079807486283,
+            28.48148209193846
+          ],
+          "candidate_score": 0.4669444262981415,
+          "candidate_iou": 0.0,
+          "width_ratio": 0.5847709172625059,
+          "height_ratio": 2.571229321515121,
+          "center_dx": -94.52325140972266,
+          "center_dy": 164.25738541285466,
+          "nearest_local_wrong_candidates": [
+            {
+              "label": "Motor",
+              "score": 0.3938063681125641,
+              "bbox": [
+                811.9067993164062,
+                503.52142333984375,
+                1072.161865234375,
+                778.5390014648438
+              ],
+              "iou": 0.045753914738234334,
+              "center_distance_px": 82.29987174753238,
+              "center_distance_norm": 0.694772778640193,
+              "center_offset": {
+                "dx": -42.612698431207036,
+                "dy": 70.40899674097966
+              },
+              "size_ratio": {
+                "width_ratio": 2.2634654679342137,
+                "height_ratio": 9.65601358936452
+              },
+              "kept_in_v1": false,
+              "kept_in_v2": false
+            },
+            {
+              "label": "Electronic Control Cabinet",
+              "score": 0.4429231882095337,
+              "bbox": [
+                811.583740234375,
+                508.333984375,
+                1076.386962890625,
+                782.6142578125
+              ],
+              "iou": 0.04508894396663434,
+              "center_distance_px": 85.18409242626967,
+              "center_distance_norm": 0.7191212736332961,
+              "center_offset": {
+                "dx": -40.66167914409766,
+                "dy": 74.85290543238591
+              },
+              "size_ratio": {
+                "width_ratio": 2.3030212617226686,
+                "height_ratio": 9.630126429239919
+              },
+              "kept_in_v1": false,
+              "kept_in_v2": false
+            },
+            {
+              "label": "Sight Hole Cover",
+              "score": 0.4254208505153656,
+              "bbox": [
+                948.4641723632812,
+                701.98583984375,
+                1017.1107788085938,
+                772.8756103515625
+              ],
+              "iou": 0.0,
+              "center_distance_px": 166.81987406668074,
+              "center_distance_norm": 1.408287825687772,
+              "center_offset": {
+                "dx": -1.8595551206601613,
+                "dy": 166.80950943629216
+              },
+              "size_ratio": {
+                "width_ratio": 0.5970267000635827,
+                "height_ratio": 2.488977584768227
+              },
+              "kept_in_v1": false,
+              "kept_in_v2": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "fire_hydrant_compare": {
+    "class_name": "Fire Hydrant",
+    "gt_count": 6,
+    "asset_ids": [
+      "test:head_frame_000009",
+      "test:head_frame_000010",
+      "test:head_frame_000011",
+      "test:smog_frame_000005",
+      "test:smog_frame_000007",
+      "test:smog_frame_000010"
+    ],
+    "overlap_wrong_label_counts": {
+      "Electrical Box": 3
+    },
+    "overlap_iou_summary": {
+      "min": 0.5725223070012978,
+      "median": 0.5769677708656294,
+      "max": 0.5829929937310752
+    },
+    "recoverable_path": "stable_wrong_label_overlap",
+    "diagnosis": "Fire Hydrant 没有同类候选，但存在可稳定重标的错类重叠候选，因此能通过轻量后处理救回一部分。"
+  },
+  "lightweight_rule_candidates": [],
+  "beyond_postprocess": [
+    "Valve",
+    "Pipeline",
+    "Pressure Gauge"
+  ],
+  "priority_ranking": [
+    {
+      "rank": 1,
+      "target": "Pressure Gauge",
+      "direction": "定位质量检查",
+      "reason": "同类候选已经稳定出现且分数不低，但在三张图上都以近乎相同的方式向下误定位，属于一致性很强、最适合先做上游定位调试的问题。"
+    },
+    {
+      "rank": 2,
+      "target": "Valve",
+      "direction": "候选生成缺失检查",
+      "reason": "当前既没有同类候选，也没有可直接重标的重叠错类候选，需要确认小部件级召回是否在候选生成阶段就缺失。"
+    },
+    {
+      "rank": 3,
+      "target": "Pipeline",
+      "direction": "大结构范围/extent 检查",
+      "reason": "问题更像长条大结构被系统性截短和覆盖不足，通常比局部定位/召回问题更重，更适合放在前两项之后处理。"
+    }
+  ]
+}

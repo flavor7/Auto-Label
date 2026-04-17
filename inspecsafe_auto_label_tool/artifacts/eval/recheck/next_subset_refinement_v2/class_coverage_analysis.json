@@ -1,0 +1,682 @@
+{
+  "iou_threshold": 0.5,
+  "variants": {
+    "baseline": {
+      "name": "baseline",
+      "images": 12,
+      "tp": 33,
+      "fp": 161,
+      "fn": 26,
+      "precision": 0.17010309278350516,
+      "recall": 0.559322033898305,
+      "f1": 0.26086956521739135,
+      "avg_fp_per_image": 13.416666666666666,
+      "gt_present_classes": [
+        "Electrical Box",
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Safety Helmet",
+        "Smoke",
+        "Valve"
+      ],
+      "predicted_classes": [
+        "Direct-Blow Pipe",
+        "Electrical Box",
+        "Electronic Control Cabinet",
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Ladder",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Safety Helmet",
+        "Sight Hole Cover",
+        "Smoke",
+        "Valve"
+      ],
+      "tp_hit_classes": [
+        "Electrical Box",
+        "Fire Extinguisher",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Safety Helmet",
+        "Smoke"
+      ],
+      "class_stats": {
+        "Pipeline": {
+          "tp": 0,
+          "fp": 13,
+          "fn": 4
+        },
+        "Person": {
+          "tp": 18,
+          "fp": 1,
+          "fn": 0
+        },
+        "Safety Helmet": {
+          "tp": 5,
+          "fp": 15,
+          "fn": 2
+        },
+        "Motor": {
+          "tp": 3,
+          "fp": 13,
+          "fn": 0
+        },
+        "Electrical Box": {
+          "tp": 3,
+          "fp": 21,
+          "fn": 0
+        },
+        "Fire Hydrant": {
+          "tp": 0,
+          "fp": 4,
+          "fn": 6
+        },
+        "Open Flame": {
+          "tp": 1,
+          "fp": 7,
+          "fn": 2
+        },
+        "Valve": {
+          "tp": 0,
+          "fp": 8,
+          "fn": 6
+        },
+        "Electronic Control Cabinet": {
+          "tp": 0,
+          "fp": 24,
+          "fn": 0
+        },
+        "Fire Extinguisher": {
+          "tp": 2,
+          "fp": 6,
+          "fn": 1
+        },
+        "Smoke": {
+          "tp": 1,
+          "fp": 6,
+          "fn": 2
+        },
+        "Pressure Gauge": {
+          "tp": 0,
+          "fp": 17,
+          "fn": 3
+        },
+        "Ladder": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "Direct-Blow Pipe": {
+          "tp": 0,
+          "fp": 11,
+          "fn": 0
+        },
+        "Sight Hole Cover": {
+          "tp": 0,
+          "fp": 12,
+          "fn": 0
+        }
+      },
+      "per_image": [
+        {
+          "asset_id": "test:cigarette_frame_000009",
+          "image_id": 9,
+          "pred_count": 19,
+          "tp": 4,
+          "fp": 15
+        },
+        {
+          "asset_id": "test:cigarette_frame_000010",
+          "image_id": 10,
+          "pred_count": 17,
+          "tp": 4,
+          "fp": 13
+        },
+        {
+          "asset_id": "test:cigarette_frame_000011",
+          "image_id": 11,
+          "pred_count": 17,
+          "tp": 4,
+          "fp": 13
+        },
+        {
+          "asset_id": "test:head_frame_000009",
+          "image_id": 83,
+          "pred_count": 22,
+          "tp": 3,
+          "fp": 19
+        },
+        {
+          "asset_id": "test:head_frame_000010",
+          "image_id": 84,
+          "pred_count": 15,
+          "tp": 4,
+          "fp": 11
+        },
+        {
+          "asset_id": "test:head_frame_000011",
+          "image_id": 85,
+          "pred_count": 13,
+          "tp": 3,
+          "fp": 10
+        },
+        {
+          "asset_id": "test:phone_frame_000013",
+          "image_id": 211,
+          "pred_count": 12,
+          "tp": 2,
+          "fp": 10
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "image_id": 212,
+          "pred_count": 15,
+          "tp": 2,
+          "fp": 13
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "image_id": 213,
+          "pred_count": 15,
+          "tp": 2,
+          "fp": 13
+        },
+        {
+          "asset_id": "test:smog_frame_000005",
+          "image_id": 230,
+          "pred_count": 17,
+          "tp": 1,
+          "fp": 16
+        },
+        {
+          "asset_id": "test:smog_frame_000007",
+          "image_id": 232,
+          "pred_count": 16,
+          "tp": 2,
+          "fp": 14
+        },
+        {
+          "asset_id": "test:smog_frame_000010",
+          "image_id": 235,
+          "pred_count": 16,
+          "tp": 2,
+          "fp": 14
+        }
+      ]
+    },
+    "refinement_v1": {
+      "name": "refinement_v1",
+      "images": 12,
+      "tp": 33,
+      "fp": 78,
+      "fn": 26,
+      "precision": 0.2972972972972973,
+      "recall": 0.559322033898305,
+      "f1": 0.38823529411764707,
+      "avg_fp_per_image": 6.5,
+      "gt_present_classes": [
+        "Electrical Box",
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Safety Helmet",
+        "Smoke",
+        "Valve"
+      ],
+      "predicted_classes": [
+        "Electrical Box",
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Safety Helmet",
+        "Smoke",
+        "Valve"
+      ],
+      "tp_hit_classes": [
+        "Electrical Box",
+        "Fire Extinguisher",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Safety Helmet",
+        "Smoke"
+      ],
+      "class_stats": {
+        "Pipeline": {
+          "tp": 0,
+          "fp": 13,
+          "fn": 4
+        },
+        "Person": {
+          "tp": 18,
+          "fp": 1,
+          "fn": 0
+        },
+        "Safety Helmet": {
+          "tp": 5,
+          "fp": 10,
+          "fn": 2
+        },
+        "Motor": {
+          "tp": 3,
+          "fp": 5,
+          "fn": 0
+        },
+        "Electrical Box": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 0
+        },
+        "Fire Hydrant": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 6
+        },
+        "Open Flame": {
+          "tp": 1,
+          "fp": 7,
+          "fn": 2
+        },
+        "Valve": {
+          "tp": 0,
+          "fp": 8,
+          "fn": 6
+        },
+        "Electronic Control Cabinet": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Fire Extinguisher": {
+          "tp": 2,
+          "fp": 5,
+          "fn": 1
+        },
+        "Smoke": {
+          "tp": 1,
+          "fp": 6,
+          "fn": 2
+        },
+        "Pressure Gauge": {
+          "tp": 0,
+          "fp": 17,
+          "fn": 3
+        },
+        "Ladder": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Direct-Blow Pipe": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Sight Hole Cover": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "per_image": [
+        {
+          "asset_id": "test:cigarette_frame_000009",
+          "image_id": 9,
+          "pred_count": 11,
+          "tp": 4,
+          "fp": 7
+        },
+        {
+          "asset_id": "test:cigarette_frame_000010",
+          "image_id": 10,
+          "pred_count": 11,
+          "tp": 4,
+          "fp": 7
+        },
+        {
+          "asset_id": "test:cigarette_frame_000011",
+          "image_id": 11,
+          "pred_count": 11,
+          "tp": 4,
+          "fp": 7
+        },
+        {
+          "asset_id": "test:head_frame_000009",
+          "image_id": 83,
+          "pred_count": 10,
+          "tp": 3,
+          "fp": 7
+        },
+        {
+          "asset_id": "test:head_frame_000010",
+          "image_id": 84,
+          "pred_count": 9,
+          "tp": 4,
+          "fp": 5
+        },
+        {
+          "asset_id": "test:head_frame_000011",
+          "image_id": 85,
+          "pred_count": 8,
+          "tp": 3,
+          "fp": 5
+        },
+        {
+          "asset_id": "test:phone_frame_000013",
+          "image_id": 211,
+          "pred_count": 5,
+          "tp": 2,
+          "fp": 3
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "image_id": 212,
+          "pred_count": 8,
+          "tp": 2,
+          "fp": 6
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "image_id": 213,
+          "pred_count": 7,
+          "tp": 2,
+          "fp": 5
+        },
+        {
+          "asset_id": "test:smog_frame_000005",
+          "image_id": 230,
+          "pred_count": 12,
+          "tp": 1,
+          "fp": 11
+        },
+        {
+          "asset_id": "test:smog_frame_000007",
+          "image_id": 232,
+          "pred_count": 8,
+          "tp": 2,
+          "fp": 6
+        },
+        {
+          "asset_id": "test:smog_frame_000010",
+          "image_id": 235,
+          "pred_count": 11,
+          "tp": 2,
+          "fp": 9
+        }
+      ]
+    },
+    "refinement_v2": {
+      "name": "refinement_v2",
+      "images": 12,
+      "tp": 36,
+      "fp": 75,
+      "fn": 23,
+      "precision": 0.32432432432432434,
+      "recall": 0.6101694915254238,
+      "f1": 0.42352941176470593,
+      "avg_fp_per_image": 6.25,
+      "gt_present_classes": [
+        "Electrical Box",
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Safety Helmet",
+        "Smoke",
+        "Valve"
+      ],
+      "predicted_classes": [
+        "Electrical Box",
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Pipeline",
+        "Pressure Gauge",
+        "Safety Helmet",
+        "Smoke",
+        "Valve"
+      ],
+      "tp_hit_classes": [
+        "Electrical Box",
+        "Fire Extinguisher",
+        "Fire Hydrant",
+        "Motor",
+        "Open Flame",
+        "Person",
+        "Safety Helmet",
+        "Smoke"
+      ],
+      "class_stats": {
+        "Pipeline": {
+          "tp": 0,
+          "fp": 13,
+          "fn": 4
+        },
+        "Person": {
+          "tp": 18,
+          "fp": 1,
+          "fn": 0
+        },
+        "Safety Helmet": {
+          "tp": 5,
+          "fp": 10,
+          "fn": 2
+        },
+        "Motor": {
+          "tp": 3,
+          "fp": 5,
+          "fn": 0
+        },
+        "Electrical Box": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 0
+        },
+        "Fire Hydrant": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 3
+        },
+        "Open Flame": {
+          "tp": 1,
+          "fp": 7,
+          "fn": 2
+        },
+        "Valve": {
+          "tp": 0,
+          "fp": 8,
+          "fn": 6
+        },
+        "Electronic Control Cabinet": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Fire Extinguisher": {
+          "tp": 2,
+          "fp": 5,
+          "fn": 1
+        },
+        "Smoke": {
+          "tp": 1,
+          "fp": 6,
+          "fn": 2
+        },
+        "Pressure Gauge": {
+          "tp": 0,
+          "fp": 17,
+          "fn": 3
+        },
+        "Ladder": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Direct-Blow Pipe": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "Sight Hole Cover": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "per_image": [
+        {
+          "asset_id": "test:cigarette_frame_000009",
+          "image_id": 9,
+          "pred_count": 10,
+          "tp": 4,
+          "fp": 6
+        },
+        {
+          "asset_id": "test:cigarette_frame_000010",
+          "image_id": 10,
+          "pred_count": 10,
+          "tp": 4,
+          "fp": 6
+        },
+        {
+          "asset_id": "test:cigarette_frame_000011",
+          "image_id": 11,
+          "pred_count": 10,
+          "tp": 4,
+          "fp": 6
+        },
+        {
+          "asset_id": "test:head_frame_000009",
+          "image_id": 83,
+          "pred_count": 10,
+          "tp": 3,
+          "fp": 7
+        },
+        {
+          "asset_id": "test:head_frame_000010",
+          "image_id": 84,
+          "pred_count": 9,
+          "tp": 4,
+          "fp": 5
+        },
+        {
+          "asset_id": "test:head_frame_000011",
+          "image_id": 85,
+          "pred_count": 8,
+          "tp": 3,
+          "fp": 5
+        },
+        {
+          "asset_id": "test:phone_frame_000013",
+          "image_id": 211,
+          "pred_count": 5,
+          "tp": 2,
+          "fp": 3
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "image_id": 212,
+          "pred_count": 8,
+          "tp": 2,
+          "fp": 6
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "image_id": 213,
+          "pred_count": 7,
+          "tp": 2,
+          "fp": 5
+        },
+        {
+          "asset_id": "test:smog_frame_000005",
+          "image_id": 230,
+          "pred_count": 13,
+          "tp": 2,
+          "fp": 11
+        },
+        {
+          "asset_id": "test:smog_frame_000007",
+          "image_id": 232,
+          "pred_count": 9,
+          "tp": 3,
+          "fp": 6
+        },
+        {
+          "asset_id": "test:smog_frame_000010",
+          "image_id": 235,
+          "pred_count": 12,
+          "tp": 3,
+          "fp": 9
+        }
+      ]
+    }
+  },
+  "summary": {
+    "gt_classes": [
+      "Electrical Box",
+      "Fire Extinguisher",
+      "Fire Hydrant",
+      "Motor",
+      "Open Flame",
+      "Person",
+      "Pipeline",
+      "Pressure Gauge",
+      "Safety Helmet",
+      "Smoke",
+      "Valve"
+    ],
+    "baseline_tp_hit_classes": [
+      "Electrical Box",
+      "Fire Extinguisher",
+      "Motor",
+      "Open Flame",
+      "Person",
+      "Safety Helmet",
+      "Smoke"
+    ],
+    "refinement_v1_tp_hit_classes": [
+      "Electrical Box",
+      "Fire Extinguisher",
+      "Motor",
+      "Open Flame",
+      "Person",
+      "Safety Helmet",
+      "Smoke"
+    ],
+    "dropped_in_v1_vs_baseline": [],
+    "refinement_v2_tp_hit_classes": [
+      "Electrical Box",
+      "Fire Extinguisher",
+      "Fire Hydrant",
+      "Motor",
+      "Open Flame",
+      "Person",
+      "Safety Helmet",
+      "Smoke"
+    ],
+    "dropped_in_v2_vs_baseline": []
+  }
+}

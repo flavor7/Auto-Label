@@ -1,0 +1,26 @@
+{
+  "predictions_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/subset3_refinement_v2/refined_predictions_v2.jsonl",
+  "gt_coco_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/gt/inspecsafe_coco_gt_15cls.json",
+  "label_schema_path": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/configs/label_schema.json",
+  "iou_type": "bbox",
+  "pred_records_total": 3,
+  "pred_records_matched": 3,
+  "pred_records_unmatched": 0,
+  "pred_instances_total": 19,
+  "pred_instances_mapped": 19,
+  "pred_instances_skipped_unknown_category": 0,
+  "metrics": {
+    "AP": 0.0012541254125412542,
+    "AP50": 0.0013201320132013201,
+    "AP75": 0.0013201320132013201,
+    "AP_small": 0.0,
+    "AP_medium": 0.0,
+    "AP_large": 0.0012541254125412542,
+    "AR_max1": 0.00012276119866783916,
+    "AR_max10": 0.0001325741394835399,
+    "AR_max100": 0.0001325741394835399,
+    "AR_small": 0.0,
+    "AR_medium": 0.0,
+    "AR_large": 0.0001528330837077327
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "selection_name": "next_subset_v1_available_multigroup",
+  "sample_count": 12,
+  "asset_ids": [
+    "test:cigarette_frame_000009",
+    "test:cigarette_frame_000010",
+    "test:cigarette_frame_000011",
+    "test:head_frame_000009",
+    "test:head_frame_000010",
+    "test:head_frame_000011",
+    "test:phone_frame_000013",
+    "test:phone_frame_000014",
+    "test:phone_frame_000015",
+    "test:smog_frame_000005",
+    "test:smog_frame_000007",
+    "test:smog_frame_000010"
+  ],
+  "sample_ids": [
+    "cigarette_frame_000009",
+    "cigarette_frame_000010",
+    "cigarette_frame_000011",
+    "head_frame_000009",
+    "head_frame_000010",
+    "head_frame_000011",
+    "phone_frame_000013",
+    "phone_frame_000014",
+    "phone_frame_000015",
+    "smog_frame_000005",
+    "smog_frame_000007",
+    "smog_frame_000010"
+  ],
+  "task_group_ids": [
+    "cigarette",
+    "head",
+    "phone",
+    "smog"
+  ],
+  "gt_classes": [
+    "Electrical Box",
+    "Fire Extinguisher",
+    "Fire Hydrant",
+    "Motor",
+    "Open Flame",
+    "Person",
+    "Pipeline",
+    "Pressure Gauge",
+    "Safety Helmet",
+    "Smoke",
+    "Valve"
+  ],
+  "gt_class_instance_counts": {
+    "Electrical Box": 3,
+    "Fire Extinguisher": 3,
+    "Fire Hydrant": 6,
+    "Motor": 3,
+    "Open Flame": 3,
+    "Person": 18,
+    "Pipeline": 4,
+    "Pressure Gauge": 3,
+    "Safety Helmet": 7,
+    "Smoke": 3,
+    "Valve": 6
+  },
+  "gt_class_image_presence": {
+    "Electrical Box": 3,
+    "Fire Extinguisher": 3,
+    "Fire Hydrant": 6,
+    "Motor": 3,
+    "Open Flame": 3,
+    "Person": 12,
+    "Pipeline": 3,
+    "Pressure Gauge": 3,
+    "Safety Helmet": 6,
+    "Smoke": 3,
+    "Valve": 3
+  },
+  "per_image_gt_classes": {
+    "cigarette_frame_000009": [
+      "Electrical Box",
+      "Motor",
+      "Person",
+      "Safety Helmet"
+    ],
+    "cigarette_frame_000010": [
+      "Electrical Box",
+      "Motor",
+      "Person",
+      "Safety Helmet"
+    ],
+    "cigarette_frame_000011": [
+      "Electrical Box",
+      "Motor",
+      "Person",
+      "Safety Helmet"
+    ],
+    "head_frame_000009": [
+      "Fire Extinguisher",
+      "Fire Hydrant",
+      "Person",
+      "Safety Helmet"
+    ],
+    "head_frame_000010": [
+      "Fire Extinguisher",
+      "Fire Hydrant",
+      "Person",
+      "Safety Helmet"
+    ],
+    "head_frame_000011": [
+      "Fire Extinguisher",
+      "Fire Hydrant",
+      "Person",
+      "Safety Helmet"
+    ],
+    "phone_frame_000013": [
+      "Person",
+      "Pipeline",
+      "Pressure Gauge",
+      "Valve"
+    ],
+    "phone_frame_000014": [
+      "Person",
+      "Pipeline",
+      "Pressure Gauge",
+      "Valve"
+    ],
+    "phone_frame_000015": [
+      "Person",
+      "Pipeline",
+      "Pressure Gauge",
+      "Valve"
+    ],
+    "smog_frame_000005": [
+      "Fire Hydrant",
+      "Open Flame",
+      "Person",
+      "Smoke"
+    ],
+    "smog_frame_000007": [
+      "Fire Hydrant",
+      "Open Flame",
+      "Person",
+      "Smoke"
+    ],
+    "smog_frame_000010": [
+      "Fire Hydrant",
+      "Open Flame",
+      "Person",
+      "Smoke"
+    ]
+  },
+  "selection_reason": {
+    "why_better_than_subset3": [
+      "subset3 only covered `Person` and `Pipeline`, while this subset covers 11 GT classes.",
+      "The subset spans 4 logical task groups (`cigarette`, `head`, `phone`, `smog`) instead of a single narrow scene family.",
+      "It mixes equipment/PPE/anomaly classes, so it is more suitable for checking refinement generalization than subset3.",
+      "The size stays controlled at 12 images, so manual review and repeated comparisons remain practical."
+    ],
+    "group_balance": {
+      "cigarette": 3,
+      "head": 3,
+      "phone": 3,
+      "smog": 3
+    }
+  }
+}

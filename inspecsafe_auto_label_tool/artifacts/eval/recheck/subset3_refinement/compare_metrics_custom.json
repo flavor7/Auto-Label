@@ -1,0 +1,77 @@
+{
+  "baseline": {
+    "tp": 7,
+    "fp": 28,
+    "fn": 2,
+    "precision": 0.2,
+    "recall": 0.7777777777777778,
+    "f1": 0.3181818181818182,
+    "avg_fp_per_image": 9.333333333333334,
+    "images": 3,
+    "per_image": [
+      {
+        "asset_id": "test:cigarette_frame_000001",
+        "tp": 3,
+        "fp": 11,
+        "fn": 0,
+        "pred": 14
+      },
+      {
+        "asset_id": "test:cigarette_frame_000002",
+        "tp": 2,
+        "fp": 8,
+        "fn": 1,
+        "pred": 10
+      },
+      {
+        "asset_id": "test:cigarette_frame_000003",
+        "tp": 2,
+        "fp": 9,
+        "fn": 1,
+        "pred": 11
+      }
+    ]
+  },
+  "refinement": {
+    "tp": 7,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.875,
+    "recall": 0.7777777777777778,
+    "f1": 0.823529411764706,
+    "avg_fp_per_image": 0.3333333333333333,
+    "images": 3,
+    "per_image": [
+      {
+        "asset_id": "test:cigarette_frame_000001",
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "pred": 4
+      },
+      {
+        "asset_id": "test:cigarette_frame_000002",
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "pred": 2
+      },
+      {
+        "asset_id": "test:cigarette_frame_000003",
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "pred": 2
+      }
+    ]
+  },
+  "delta": {
+    "precision": 0.675,
+    "recall": 0.0,
+    "f1": 0.5053475935828877,
+    "avg_fp_per_image": -9.0,
+    "tp": 0,
+    "fp": -27,
+    "fn": 0
+  }
+}

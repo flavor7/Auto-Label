@@ -1,0 +1,42 @@
+{
+  "baseline": {
+    "tp": 7,
+    "fp": 28,
+    "fn": 2,
+    "precision": 0.2,
+    "recall": 0.7777777777777778,
+    "f1": 0.3181818181818182,
+    "avg_fp_per_image": 9.333333333333334,
+    "pred_total": 35
+  },
+  "refinement_v1": {
+    "tp": 7,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.875,
+    "recall": 0.7777777777777778,
+    "f1": 0.823529411764706,
+    "avg_fp_per_image": 0.3333333333333333,
+    "pred_total": 8
+  },
+  "refinement_v2": {
+    "tp": 7,
+    "fp": 12,
+    "fn": 2,
+    "precision": 0.3684210526315789,
+    "recall": 0.7777777777777778,
+    "f1": 0.5,
+    "avg_fp_per_image": 4.0,
+    "pred_total": 19
+  },
+  "delta_v2_vs_v1": {
+    "precision": -0.506578947368421,
+    "recall": 0.0,
+    "f1": -0.32352941176470595,
+    "avg_fp_per_image": 3.6666666666666665,
+    "tp": 0,
+    "fp": 11,
+    "fn": 0,
+    "pred_total": 11
+  }
+}

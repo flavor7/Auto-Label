@@ -1,0 +1,1279 @@
+{
+  "input_paths": {
+    "gt_coco": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/gt/inspecsafe_coco_gt_15cls.json",
+    "baseline": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_baseline/baseline_subset_predictions.jsonl",
+    "refinement_v1": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_refinement_v1/refined_predictions.jsonl",
+    "refinement_v2": "/root/autodl-tmp/inspecsafe/program_git/inspecsafe_auto_label_tool/artifacts/eval/recheck/next_subset_refinement_v2/refined_predictions.jsonl"
+  },
+  "focus_classes": {
+    "Valve": {
+      "gt_count": 6,
+      "asset_ids": [
+        "test:phone_frame_000013",
+        "test:phone_frame_000014",
+        "test:phone_frame_000015"
+      ],
+      "occurrences_with_same_label_candidates": 0,
+      "same_label_candidate_count": 0,
+      "same_label_score_range": {
+        "min": null,
+        "max": null
+      },
+      "best_same_label_iou_range": {
+        "min": null,
+        "max": null
+      },
+      "best_same_label_kept_in_v1_count": 0,
+      "best_same_label_kept_in_v2_count": 0,
+      "occurrences_with_wrong_label_overlap_ge_0_1": 0,
+      "typical_confusion_labels": {},
+      "nearest_wrong_labels": {
+        "Person": 6
+      },
+      "primary_failure_mode": {
+        "primary": "A. 候选缺失",
+        "reason": "Valve 在 baseline 里没有同类候选，也没有能与 GT 形成有效重叠的错类候选。"
+      },
+      "occurrences": [
+        {
+          "asset_id": "test:phone_frame_000013",
+          "gt_bbox": [
+            1490.3548140475173,
+            582.5777568341682,
+            73.02944126138073,
+            68.16081184395523
+          ],
+          "same_label_candidates": [],
+          "best_same_label_candidate": null,
+          "best_wrong_label_candidate": {
+            "label": "Person",
+            "score": 0.8711798191070557,
+            "bbox": [
+              822.2012939453125,
+              693.3980102539062,
+              994.3482666015625,
+              1063.0064697265625
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -618.5947544047701,
+              "dy": 261.5440772340885
+            },
+            "size_ratio": {
+              "width_ratio": 2.357227026290894,
+              "height_ratio": 5.422594735503207
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000013",
+          "gt_bbox": [
+            1704.574508414234,
+            628.8297362997093,
+            87.63532951365687,
+            77.08663244256854
+          ],
+          "same_label_candidates": [],
+          "best_same_label_candidate": null,
+          "best_wrong_label_candidate": {
+            "label": "Person",
+            "score": 0.8711798191070557,
+            "bbox": [
+              822.2012939453125,
+              693.3980102539062,
+              994.3482666015625,
+              1063.0064697265625
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -840.117392897625,
+              "dy": 210.82918746924076
+            },
+            "size_ratio": {
+              "width_ratio": 1.9643558552424116,
+              "height_ratio": 4.794715345076511
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "gt_bbox": [
+            1490.3548140475173,
+            582.5777568341682,
+            73.02944126138073,
+            68.16081184395523
+          ],
+          "same_label_candidates": [],
+          "best_same_label_candidate": null,
+          "best_wrong_label_candidate": {
+            "label": "Person",
+            "score": 0.8241203427314758,
+            "bbox": [
+              1270.217529296875,
+              627.9821166992188,
+              1377.944091796875,
+              911.8233032226562
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -202.78872413133263,
+              "dy": 153.24454720479162
+            },
+            "size_ratio": {
+              "width_ratio": 1.4751114158799916,
+              "height_ratio": 4.164287056516473
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "gt_bbox": [
+            1704.574508414234,
+            628.8297362997093,
+            87.63532951365687,
+            77.08663244256854
+          ],
+          "same_label_candidates": [],
+          "best_same_label_candidate": null,
+          "best_wrong_label_candidate": {
+            "label": "Person",
+            "score": 0.8241203427314758,
+            "bbox": [
+              1270.217529296875,
+              627.9821166992188,
+              1377.944091796875,
+              911.8233032226562
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -424.3113626241875,
+              "dy": 102.52965743994389
+            },
+            "size_ratio": {
+              "width_ratio": 1.2292595132333264,
+              "height_ratio": 3.6821064499724545
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "gt_bbox": [
+            1490.3548140475173,
+            582.5777568341682,
+            73.02944126138073,
+            68.16081184395523
+          ],
+          "same_label_candidates": [],
+          "best_same_label_candidate": null,
+          "best_wrong_label_candidate": {
+            "label": "Person",
+            "score": 0.8424650430679321,
+            "bbox": [
+              685.8365478515625,
+              630.2142944335938,
+              821.6407470703125,
+              966.7047729492188
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -773.1308872172701,
+              "dy": 181.80137093526037
+            },
+            "size_ratio": {
+              "width_ratio": 1.8595815177154544,
+              "height_ratio": 4.936714651902526
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "gt_bbox": [
+            1704.574508414234,
+            628.8297362997093,
+            87.63532951365687,
+            77.08663244256854
+          ],
+          "same_label_candidates": [],
+          "best_same_label_candidate": null,
+          "best_wrong_label_candidate": {
+            "label": "Person",
+            "score": 0.8424650430679321,
+            "bbox": [
+              685.8365478515625,
+              630.2142944335938,
+              821.6407470703125,
+              966.7047729492188
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -994.653525710125,
+              "dy": 131.08648117041264
+            },
+            "size_ratio": {
+              "width_ratio": 1.5496512647628786,
+              "height_ratio": 4.365095060629595
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "overlapping_wrong_label_candidates": []
+        }
+      ]
+    },
+    "Pipeline": {
+      "gt_count": 4,
+      "asset_ids": [
+        "test:phone_frame_000013",
+        "test:phone_frame_000014",
+        "test:phone_frame_000015"
+      ],
+      "occurrences_with_same_label_candidates": 4,
+      "same_label_candidate_count": 4,
+      "same_label_score_range": {
+        "min": 0.35713738203048706,
+        "max": 0.3750176727771759
+      },
+      "best_same_label_iou_range": {
+        "min": 0.04889817560596085,
+        "max": 0.27908678811448223
+      },
+      "best_same_label_kept_in_v1_count": 4,
+      "best_same_label_kept_in_v2_count": 4,
+      "occurrences_with_wrong_label_overlap_ge_0_1": 0,
+      "typical_confusion_labels": {},
+      "nearest_wrong_labels": {
+        "Electronic Control Cabinet": 3,
+        "Person": 1
+      },
+      "primary_failure_mode": {
+        "primary": "D. 几何位置偏差太大，无法命中",
+        "reason": "Pipeline 的同类候选存在且保留到了 v1/v2，但 IoU 长期停留在命中阈值以下，属于定位/尺度偏差主导。"
+      },
+      "occurrences": [
+        {
+          "asset_id": "test:phone_frame_000013",
+          "gt_bbox": [
+            9.740698985343855,
+            3.652762119503946,
+            1900.6538895152198,
+            295.87373167981957
+          ],
+          "same_label_candidates": [
+            {
+              "label": "Pipeline",
+              "score": 0.36077478528022766,
+              "bbox": [
+                725.2893676757812,
+                55.23761749267578,
+                1643.30859375,
+                226.19857788085938
+              ],
+              "iou": 0.27908678811448223,
+              "center_offset": {
+                "dx": 224.23133696993682,
+                "dy": -10.87153027264614
+              },
+              "size_ratio": {
+                "width_ratio": 0.4830017875102807,
+                "height_ratio": 0.5778172986751976
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            }
+          ],
+          "best_same_label_candidate": {
+            "label": "Pipeline",
+            "score": 0.36077478528022766,
+            "bbox": [
+              725.2893676757812,
+              55.23761749267578,
+              1643.30859375,
+              226.19857788085938
+            ],
+            "iou": 0.27908678811448223,
+            "center_offset": {
+              "dx": 224.23133696993682,
+              "dy": -10.87153027264614
+            },
+            "size_ratio": {
+              "width_ratio": 0.4830017875102807,
+              "height_ratio": 0.5778172986751976
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "best_wrong_label_candidate": {
+            "label": "Person",
+            "score": 0.8711798191070557,
+            "bbox": [
+              822.2012939453125,
+              693.3980102539062,
+              994.3482666015625,
+              1063.0064697265625
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -51.792863469516305,
+              "dy": 726.6126120308206
+            },
+            "size_ratio": {
+              "width_ratio": 0.09057249907828181,
+              "height_ratio": 1.2492101187023554
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000013",
+          "gt_bbox": [
+            0.0,
+            152.19842164599774,
+            1910.3945885005637,
+            680.6313416009019
+          ],
+          "same_label_candidates": [
+            {
+              "label": "Pipeline",
+              "score": 0.36077478528022766,
+              "bbox": [
+                725.2893676757812,
+                55.23761749267578,
+                1643.30859375,
+                226.19857788085938
+              ],
+              "iou": 0.04889817560596085,
+              "center_offset": {
+                "dx": 229.10168646260877,
+                "dy": -351.7959947596811
+              },
+              "size_ratio": {
+                "width_ratio": 0.48053906329098034,
+                "height_ratio": 0.25117997062267083
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            }
+          ],
+          "best_same_label_candidate": {
+            "label": "Pipeline",
+            "score": 0.36077478528022766,
+            "bbox": [
+              725.2893676757812,
+              55.23761749267578,
+              1643.30859375,
+              226.19857788085938
+            ],
+            "iou": 0.04889817560596085,
+            "center_offset": {
+              "dx": 229.10168646260877,
+              "dy": -351.7959947596811
+            },
+            "size_ratio": {
+              "width_ratio": 0.48053906329098034,
+              "height_ratio": 0.25117997062267083
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "best_wrong_label_candidate": {
+            "label": "Electronic Control Cabinet",
+            "score": 0.42778345942497253,
+            "bbox": [
+              232.404541015625,
+              640.45849609375,
+              669.92138671875,
+              924.07373046875
+            ],
+            "iou": 0.06280105295631336,
+            "center_offset": {
+              "dx": -504.03433038309436,
+              "dy": 289.7520208348013
+            },
+            "size_ratio": {
+              "width_ratio": 0.22901909811549695,
+              "height_ratio": 0.41669434984864673
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "gt_bbox": [
+            1.2175873731679818,
+            6.087936865839909,
+            1911.6121758737315,
+            830.3945885005637
+          ],
+          "same_label_candidates": [
+            {
+              "label": "Pipeline",
+              "score": 0.3750176727771759,
+              "bbox": [
+                724.8182373046875,
+                54.95855712890625,
+                1643.3035888671875,
+                226.80364990234375
+              ],
+              "iou": 0.09943174720886067,
+              "center_offset": {
+                "dx": 227.0372377759038,
+                "dy": -280.4041276004968
+              },
+              "size_ratio": {
+                "width_ratio": 0.48047682639533945,
+                "height_ratio": 0.2069438977001725
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            }
+          ],
+          "best_same_label_candidate": {
+            "label": "Pipeline",
+            "score": 0.3750176727771759,
+            "bbox": [
+              724.8182373046875,
+              54.95855712890625,
+              1643.3035888671875,
+              226.80364990234375
+            ],
+            "iou": 0.09943174720886067,
+            "center_offset": {
+              "dx": 227.0372377759038,
+              "dy": -280.4041276004968
+            },
+            "size_ratio": {
+              "width_ratio": 0.48047682639533945,
+              "height_ratio": 0.2069438977001725
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "best_wrong_label_candidate": {
+            "label": "Electronic Control Cabinet",
+            "score": 0.4063199460506439,
+            "bbox": [
+              233.4840087890625,
+              642.3934326171875,
+              667.8900756835938,
+              923.658935546875
+            ],
+            "iou": 0.05187684221795674,
+            "center_offset": {
+              "dx": -506.33663307370557,
+              "dy": 361.74095296590946
+            },
+            "size_ratio": {
+              "width_ratio": 0.22724591963638197,
+              "height_ratio": 0.33871307306754755
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "gt_bbox": [
+            7.305524239007891,
+            10.958286358511836,
+            1892.130777903044,
+            821.8714768883879
+          ],
+          "same_label_candidates": [
+            {
+              "label": "Pipeline",
+              "score": 0.35713738203048706,
+              "bbox": [
+                724.802001953125,
+                55.18724060058594,
+                1642.837646484375,
+                225.5708770751953
+              ],
+              "iou": 0.1005848026948357,
+              "center_offset": {
+                "dx": 230.4489110282201,
+                "dy": -281.51496596481513
+              },
+              "size_ratio": {
+                "width_ratio": 0.485186148469433,
+                "height_ratio": 0.20731177716457957
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            }
+          ],
+          "best_same_label_candidate": {
+            "label": "Pipeline",
+            "score": 0.35713738203048706,
+            "bbox": [
+              724.802001953125,
+              55.18724060058594,
+              1642.837646484375,
+              225.5708770751953
+            ],
+            "iou": 0.1005848026948357,
+            "center_offset": {
+              "dx": 230.4489110282201,
+              "dy": -281.51496596481513
+            },
+            "size_ratio": {
+              "width_ratio": 0.485186148469433,
+              "height_ratio": 0.20731177716457957
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "best_wrong_label_candidate": {
+            "label": "Electronic Control Cabinet",
+            "score": 0.38511720299720764,
+            "bbox": [
+              233.31597900390625,
+              639.0545654296875,
+              668.3465576171875,
+              919.6376953125
+            ],
+            "iou": 0.05292275371702297,
+            "center_offset": {
+              "dx": -502.53964487998303,
+              "dy": 357.452105568388
+            },
+            "size_ratio": {
+              "width_ratio": 0.22991570334023337,
+              "height_ratio": 0.3413953857421875
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          "overlapping_wrong_label_candidates": []
+        }
+      ]
+    },
+    "Pressure Gauge": {
+      "gt_count": 3,
+      "asset_ids": [
+        "test:phone_frame_000013",
+        "test:phone_frame_000014",
+        "test:phone_frame_000015"
+      ],
+      "occurrences_with_same_label_candidates": 3,
+      "same_label_candidate_count": 5,
+      "same_label_score_range": {
+        "min": 0.4538775682449341,
+        "max": 0.5259183645248413
+      },
+      "best_same_label_iou_range": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "best_same_label_kept_in_v1_count": 3,
+      "best_same_label_kept_in_v2_count": 3,
+      "occurrences_with_wrong_label_overlap_ge_0_1": 0,
+      "typical_confusion_labels": {},
+      "nearest_wrong_labels": {
+        "Electronic Control Cabinet": 1,
+        "Motor": 1,
+        "Person": 1
+      },
+      "primary_failure_mode": {
+        "primary": "D. 几何位置偏差太大，无法命中",
+        "reason": "Pressure Gauge 的同类候选存在且保留到了 v1/v2，但与 GT 基本不重叠，说明是严重的几何偏差而不是规则过滤。"
+      },
+      "occurrences": [
+        {
+          "asset_id": "test:phone_frame_000013",
+          "gt_bbox": [
+            927.1566316691662,
+            556.3804746153949,
+            114.98079807486283,
+            28.48148209193846
+          ],
+          "same_label_candidates": [
+            {
+              "label": "Pressure Gauge",
+              "score": 0.5259183645248413,
+              "bbox": [
+                948.763671875,
+                701.1142578125,
+                1016.044921875,
+                772.5469970703125
+              ],
+              "iou": 0.0,
+              "center_offset": {
+                "dx": -2.2427338315976613,
+                "dy": 166.20941178004216
+              },
+              "size_ratio": {
+                "width_ratio": 0.5851520525731075,
+                "height_ratio": 2.5080415066613115
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            }
+          ],
+          "best_same_label_candidate": {
+            "label": "Pressure Gauge",
+            "score": 0.5259183645248413,
+            "bbox": [
+              948.763671875,
+              701.1142578125,
+              1016.044921875,
+              772.5469970703125
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -2.2427338315976613,
+              "dy": 166.20941178004216
+            },
+            "size_ratio": {
+              "width_ratio": 0.5851520525731075,
+              "height_ratio": 2.5080415066613115
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "best_wrong_label_candidate": {
+            "label": "Person",
+            "score": 0.8711798191070557,
+            "bbox": [
+              822.2012939453125,
+              693.3980102539062,
+              994.3482666015625,
+              1063.0064697265625
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -76.37225043316016,
+              "dy": 307.5810243288703
+            },
+            "size_ratio": {
+              "width_ratio": 1.4971801860704328,
+              "height_ratio": 12.977149794366637
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000014",
+          "gt_bbox": [
+            927.1566316691662,
+            556.3804746153949,
+            114.98079807486283,
+            28.48148209193846
+          ],
+          "same_label_candidates": [
+            {
+              "label": "Pressure Gauge",
+              "score": 0.4675089120864868,
+              "bbox": [
+                948.6467895507812,
+                701.1963500976562,
+                1015.8203735351562,
+                772.4509887695312
+              ],
+              "iou": 0.0,
+              "center_offset": {
+                "dx": -2.4134491636289113,
+                "dy": 166.20245377222966
+              },
+              "size_ratio": {
+                "width_ratio": 0.5842156699994286,
+                "height_ratio": 2.5017883002669747
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            },
+            {
+              "label": "Pressure Gauge",
+              "score": 0.4661247134208679,
+              "bbox": [
+                856.5285034179688,
+                698.456298828125,
+                923.8351440429688,
+                771.477294921875
+              ],
+              "iou": 0.0,
+              "center_offset": {
+                "dx": -94.46520697612891,
+                "dy": 164.3455812136359
+              },
+              "size_ratio": {
+                "width_ratio": 0.5853728774884422,
+                "height_ratio": 2.5638060497707817
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            }
+          ],
+          "best_same_label_candidate": {
+            "label": "Pressure Gauge",
+            "score": 0.4675089120864868,
+            "bbox": [
+              948.6467895507812,
+              701.1963500976562,
+              1015.8203735351562,
+              772.4509887695312
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -2.4134491636289113,
+              "dy": 166.20245377222966
+            },
+            "size_ratio": {
+              "width_ratio": 0.5842156699994286,
+              "height_ratio": 2.5017883002669747
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "best_wrong_label_candidate": {
+            "label": "Electronic Control Cabinet",
+            "score": 0.4511556625366211,
+            "bbox": [
+              812.6947021484375,
+              510.388671875,
+              1073.1402587890625,
+              778.011474609375
+            ],
+            "iou": 0.04698376726492419,
+            "center_offset": {
+              "dx": -41.72955023784766,
+              "dy": 73.57885758082341
+            },
+            "size_ratio": {
+              "width_ratio": 2.2651221856283477,
+              "height_ratio": 9.396379088366482
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          "overlapping_wrong_label_candidates": []
+        },
+        {
+          "asset_id": "test:phone_frame_000015",
+          "gt_bbox": [
+            927.1566316691662,
+            556.3804746153949,
+            114.98079807486283,
+            28.48148209193846
+          ],
+          "same_label_candidates": [
+            {
+              "label": "Pressure Gauge",
+              "score": 0.4669444262981415,
+              "bbox": [
+                856.5050659179688,
+                698.2623901367188,
+                923.7424926757812,
+                771.4948120117188
+              ],
+              "iou": 0.0,
+              "center_offset": {
+                "dx": -94.52325140972266,
+                "dy": 164.25738541285466
+              },
+              "size_ratio": {
+                "width_ratio": 0.5847709172625059,
+                "height_ratio": 2.571229321515121
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            },
+            {
+              "label": "Pressure Gauge",
+              "score": 0.4538775682449341,
+              "bbox": [
+                948.8432006835938,
+                701.2093505859375,
+                1016.0411987304688,
+                772.2041015625
+              ],
+              "iou": 0.0,
+              "center_offset": {
+                "dx": -2.2048309995664113,
+                "dy": 166.08551041285466
+              },
+              "size_ratio": {
+                "width_ratio": 0.5844280016487889,
+                "height_ratio": 2.492663504918419
+              },
+              "kept_in_v1": true,
+              "kept_in_v2": true
+            }
+          ],
+          "best_same_label_candidate": {
+            "label": "Pressure Gauge",
+            "score": 0.4669444262981415,
+            "bbox": [
+              856.5050659179688,
+              698.2623901367188,
+              923.7424926757812,
+              771.4948120117188
+            ],
+            "iou": 0.0,
+            "center_offset": {
+              "dx": -94.52325140972266,
+              "dy": 164.25738541285466
+            },
+            "size_ratio": {
+              "width_ratio": 0.5847709172625059,
+              "height_ratio": 2.571229321515121
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          "best_wrong_label_candidate": {
+            "label": "Motor",
+            "score": 0.3938063681125641,
+            "bbox": [
+              811.9067993164062,
+              503.52142333984375,
+              1072.161865234375,
+              778.5390014648438
+            ],
+            "iou": 0.045753914738234334,
+            "center_offset": {
+              "dx": -42.612698431207036,
+              "dy": 70.40899674097966
+            },
+            "size_ratio": {
+              "width_ratio": 2.2634654679342137,
+              "height_ratio": 9.65601358936452
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          "overlapping_wrong_label_candidates": []
+        }
+      ]
+    }
+  },
+  "fire_hydrant_compare": {
+    "gt_count": 6,
+    "asset_ids": [
+      "test:head_frame_000009",
+      "test:head_frame_000010",
+      "test:head_frame_000011",
+      "test:smog_frame_000005",
+      "test:smog_frame_000007",
+      "test:smog_frame_000010"
+    ],
+    "occurrences_with_same_label_candidates": 0,
+    "same_label_candidate_count": 0,
+    "same_label_score_range": {
+      "min": null,
+      "max": null
+    },
+    "best_same_label_iou_range": {
+      "min": null,
+      "max": null
+    },
+    "best_same_label_kept_in_v1_count": 0,
+    "best_same_label_kept_in_v2_count": 0,
+    "occurrences_with_wrong_label_overlap_ge_0_1": 3,
+    "typical_confusion_labels": {
+      "Electrical Box": 5,
+      "Person": 2,
+      "Electronic Control Cabinet": 1
+    },
+    "nearest_wrong_labels": {
+      "Electrical Box": 3,
+      "Person": 3
+    },
+    "primary_failure_mode": {
+      "primary": "C. 类别混淆主导",
+      "reason": "Fire Hydrant 没有同类候选，但存在和 GT 明显重叠的错类候选，可视为稳定混淆。"
+    },
+    "occurrences": [
+      {
+        "asset_id": "test:head_frame_000009",
+        "gt_bbox": [
+          577.9213483146068,
+          505.1123595505618,
+          121.34831460674161,
+          245.7303370786517
+        ],
+        "same_label_candidates": [],
+        "best_same_label_candidate": null,
+        "best_wrong_label_candidate": {
+          "label": "Person",
+          "score": 0.8611541986465454,
+          "bbox": [
+            1071.215087890625,
+            551.91845703125,
+            1371.313232421875,
+            1079.08740234375
+          ],
+          "iou": 0.0,
+          "center_offset": {
+            "dx": 582.6686545382724,
+            "dy": 187.52540159761236
+          },
+          "size_ratio": {
+            "width_ratio": 2.473031005859374,
+            "height_ratio": 2.1453148666123685
+          },
+          "kept_in_v1": true,
+          "kept_in_v2": true
+        },
+        "overlapping_wrong_label_candidates": []
+      },
+      {
+        "asset_id": "test:head_frame_000010",
+        "gt_bbox": [
+          1014.7752808988765,
+          603.7078651685393,
+          94.0449438202246,
+          160.78651685393254
+        ],
+        "same_label_candidates": [],
+        "best_same_label_candidate": null,
+        "best_wrong_label_candidate": {
+          "label": "Person",
+          "score": 0.7016133069992065,
+          "bbox": [
+            913.4638671875,
+            436.0216064453125,
+            1027.135009765625,
+            783.1925048828125
+          ],
+          "iou": 0.037782961540629066,
+          "center_offset": {
+            "dx": -91.49831433242639,
+            "dy": -74.49406793144317
+          },
+          "size_ratio": {
+            "width_ratio": 1.208689568632394,
+            "height_ratio": 2.1592040503799796
+          },
+          "kept_in_v1": true,
+          "kept_in_v2": true
+        },
+        "overlapping_wrong_label_candidates": []
+      },
+      {
+        "asset_id": "test:head_frame_000011",
+        "gt_bbox": [
+          993.5391723917259,
+          603.7078651685393,
+          115.28105232737528,
+          160.78651685393254
+        ],
+        "same_label_candidates": [],
+        "best_same_label_candidate": null,
+        "best_wrong_label_candidate": {
+          "label": "Person",
+          "score": 0.8396725058555603,
+          "bbox": [
+            823.0282592773438,
+            541.1253662109375,
+            934.7396850585938,
+            1069.734619140625
+          ],
+          "iou": 0.0,
+          "center_offset": {
+            "dx": -172.2957263874448,
+            "dy": 121.32886908027558
+          },
+          "size_ratio": {
+            "width_ratio": 0.9690354444719307,
+            "height_ratio": 3.287646646452984
+          },
+          "kept_in_v1": true,
+          "kept_in_v2": true
+        },
+        "overlapping_wrong_label_candidates": []
+      },
+      {
+        "asset_id": "test:smog_frame_000005",
+        "gt_bbox": [
+          1599.5744680851064,
+          74.04255319148936,
+          248.93617021276577,
+          670.2127659574469
+        ],
+        "same_label_candidates": [],
+        "best_same_label_candidate": null,
+        "best_wrong_label_candidate": {
+          "label": "Electrical Box",
+          "score": 0.3936571776866913,
+          "bbox": [
+            1609.545654296875,
+            333.29827880859375,
+            1843.239501953125,
+            742.0370483398438
+          ],
+          "iou": 0.5725223070012978,
+          "center_offset": {
+            "dx": 2.3500249335106673,
+            "dy": 128.51872740400597
+          },
+          "size_ratio": {
+            "width_ratio": 0.9387701572516033,
+            "height_ratio": 0.6098641958085317
+          },
+          "kept_in_v1": false,
+          "kept_in_v2": false
+        },
+        "overlapping_wrong_label_candidates": [
+          {
+            "label": "Electrical Box",
+            "score": 0.3936571776866913,
+            "bbox": [
+              1609.545654296875,
+              333.29827880859375,
+              1843.239501953125,
+              742.0370483398438
+            ],
+            "iou": 0.5725223070012978,
+            "center_offset": {
+              "dx": 2.3500249335106673,
+              "dy": 128.51872740400597
+            },
+            "size_ratio": {
+              "width_ratio": 0.9387701572516033,
+              "height_ratio": 0.6098641958085317
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          {
+            "label": "Electrical Box",
+            "score": 0.38319796323776245,
+            "bbox": [
+              1611.405029296875,
+              331.57891845703125,
+              1918.145751953125,
+              1076.125732421875
+            ],
+            "iou": 0.3290385675179007,
+            "center_offset": {
+              "dx": 40.73283743351067,
+              "dy": 294.70338926924035
+            },
+            "size_ratio": {
+              "width_ratio": 1.232206321781518,
+              "height_ratio": 1.1109111192491319
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          {
+            "label": "Person",
+            "score": 0.3598943054676056,
+            "bbox": [
+              1489.75390625,
+              376.7682800292969,
+              1837.10009765625,
+              924.5711669921875
+            ],
+            "iou": 0.32349122462118846,
+            "center_offset": {
+              "dx": -60.61555123836433,
+              "dy": 241.5207873405294
+            },
+            "size_ratio": {
+              "width_ratio": 1.395322307358441,
+              "height_ratio": 0.8173566884843129
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          },
+          {
+            "label": "Person",
+            "score": 0.48610031604766846,
+            "bbox": [
+              1490.0506591796875,
+              376.46539306640625,
+              1666.6156005859375,
+              924.3555297851562
+            ],
+            "iou": 0.10320155407458005,
+            "center_offset": {
+              "dx": -145.70942330867683,
+              "dy": 241.26152525556847
+            },
+            "size_ratio": {
+              "width_ratio": 0.7092779697516031,
+              "height_ratio": 0.8174868706597221
+            },
+            "kept_in_v1": true,
+            "kept_in_v2": true
+          }
+        ]
+      },
+      {
+        "asset_id": "test:smog_frame_000007",
+        "gt_bbox": [
+          1605.9574468085107,
+          68.93617021276596,
+          241.2765957446809,
+          665.1063829787236
+        ],
+        "same_label_candidates": [],
+        "best_same_label_candidate": null,
+        "best_wrong_label_candidate": {
+          "label": "Electrical Box",
+          "score": 0.3936654031276703,
+          "bbox": [
+            1608.7073974609375,
+            332.4171447753906,
+            1842.6571044921875,
+            744.2030029296875
+          ],
+          "iou": 0.5769677708656294,
+          "center_offset": {
+            "dx": -0.9134937042886122,
+            "dy": 136.82071215041134
+          },
+          "size_ratio": {
+            "width_ratio": 0.969632824556327,
+            "height_ratio": 0.6191278097649375
+          },
+          "kept_in_v1": false,
+          "kept_in_v2": false
+        },
+        "overlapping_wrong_label_candidates": [
+          {
+            "label": "Electrical Box",
+            "score": 0.3936654031276703,
+            "bbox": [
+              1608.7073974609375,
+              332.4171447753906,
+              1842.6571044921875,
+              744.2030029296875
+            ],
+            "iou": 0.5769677708656294,
+            "center_offset": {
+              "dx": -0.9134937042886122,
+              "dy": 136.82071215041134
+            },
+            "size_ratio": {
+              "width_ratio": 0.969632824556327,
+              "height_ratio": 0.6191278097649375
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          {
+            "label": "Electronic Control Cabinet",
+            "score": 0.3948194086551666,
+            "bbox": [
+              1604.9053955078125,
+              329.3970642089844,
+              1918.0079345703125,
+              1076.1429443359375
+            ],
+            "iou": 0.32911211170836036,
+            "center_offset": {
+              "dx": 34.86092035821139,
+              "dy": 301.2806425703332
+            },
+            "size_ratio": {
+              "width_ratio": 1.2976912994653877,
+              "height_ratio": 1.122746524822994
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          },
+          {
+            "label": "Electrical Box",
+            "score": 0.4986182451248169,
+            "bbox": [
+              1606.898193359375,
+              330.2861022949219,
+              1918.0185546875,
+              1076.11328125
+            ],
+            "iou": 0.32840571829759935,
+            "center_offset": {
+              "dx": 35.86262934258639,
+              "dy": 301.7103300703332
+            },
+            "size_ratio": {
+              "width_ratio": 1.2894759243758265,
+              "height_ratio": 1.1213652402715504
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          }
+        ]
+      },
+      {
+        "asset_id": "test:smog_frame_000010",
+        "gt_bbox": [
+          1614.893617021277,
+          62.5531914893617,
+          231.06382978723377,
+          679.1489361702129
+        ],
+        "same_label_candidates": [],
+        "best_same_label_candidate": null,
+        "best_wrong_label_candidate": {
+          "label": "Electrical Box",
+          "score": 0.4927840828895569,
+          "bbox": [
+            1609.762451171875,
+            332.9326477050781,
+            1842.539794921875,
+            744.242919921875
+          ],
+          "iou": 0.5829929937310752,
+          "center_offset": {
+            "dx": -4.2744088680187815,
+            "dy": 136.4601242390084
+          },
+          "size_ratio": {
+            "width_ratio": 1.007415760244016,
+            "height_ratio": 0.6056260273868875
+          },
+          "kept_in_v1": false,
+          "kept_in_v2": false
+        },
+        "overlapping_wrong_label_candidates": [
+          {
+            "label": "Electrical Box",
+            "score": 0.4927840828895569,
+            "bbox": [
+              1609.762451171875,
+              332.9326477050781,
+              1842.539794921875,
+              744.242919921875
+            ],
+            "iou": 0.5829929937310752,
+            "center_offset": {
+              "dx": -4.2744088680187815,
+              "dy": 136.4601242390084
+            },
+            "size_ratio": {
+              "width_ratio": 1.007415760244016,
+              "height_ratio": 0.6056260273868875
+            },
+            "kept_in_v1": false,
+            "kept_in_v2": false
+          }
+        ]
+      }
+    ]
+  }
+}
