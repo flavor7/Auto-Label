@@ -1,0 +1,16 @@
+class_name,gt_count,baseline_tp,baseline_fp,baseline_fn,baseline_precision,baseline_recall,v1_tp,v1_fp,v1_fn,v1_precision,v1_recall,v2_tp,v2_fp,v2_fn,v2_precision,v2_recall,main_change_type,notes
+Pipeline,4,0,13,4,0.0000,0.0000,0,13,4,0.0000,0.0000,0,13,4,0.0000,0.0000,boundary_case,still extent-limited
+Person,18,18,1,0,0.9474,1.0000,18,1,0,0.9474,1.0000,18,1,0,0.9474,1.0000,stable,stable strong baseline
+Safety Helmet,7,5,15,2,0.2500,0.7143,5,10,2,0.3333,0.7143,5,10,2,0.3333,0.7143,fp_reduced,"high FP reduced, TP kept"
+Motor,3,3,13,0,0.1875,1.0000,3,5,0,0.3750,1.0000,3,5,0,0.3750,1.0000,fp_reduced,"high FP reduced, TP kept"
+Electrical Box,3,3,21,0,0.1250,1.0000,3,3,0,0.5000,1.0000,3,3,0,0.5000,1.0000,fp_reduced,high FP strongly suppressed
+Fire Hydrant,6,0,4,6,0.0000,0.0000,0,3,6,0.0000,0.0000,3,0,3,1.0000,0.5000,fn_reduced,fire hydrant partially recovered
+Open Flame,3,1,7,2,0.1250,0.3333,1,7,2,0.1250,0.3333,1,7,2,0.1250,0.3333,stable,"stable, recall still limited"
+Valve,6,0,8,6,0.0000,0.0000,0,8,6,0.0000,0.0000,0,8,6,0.0000,0.0000,boundary_case,still candidate-missing
+Electronic Control Cabinet,0,0,24,0,0.0000,0.0000,0,0,0,0.0000,0.0000,0,0,0,0.0000,0.0000,fp_reduced,pure FP class suppressed
+Fire Extinguisher,3,2,6,1,0.2500,0.6667,2,5,1,0.2857,0.6667,2,5,1,0.2857,0.6667,fp_reduced,minor FP reduction
+Smoke,3,1,6,2,0.1429,0.3333,1,6,2,0.1429,0.3333,1,6,2,0.1429,0.3333,stable,"stable, recall still limited"
+Pressure Gauge,3,0,17,3,0.0000,0.0000,0,17,3,0.0000,0.0000,0,17,3,0.0000,0.0000,boundary_case,still mislocalized
+Ladder,0,0,3,0,0.0000,0.0000,0,0,0,0.0000,0.0000,0,0,0,0.0000,0.0000,fp_reduced,pure FP class suppressed
+Direct-Blow Pipe,0,0,11,0,0.0000,0.0000,0,0,0,0.0000,0.0000,0,0,0,0.0000,0.0000,fp_reduced,pure FP class suppressed
+Sight Hole Cover,0,0,12,0,0.0000,0.0000,0,0,0,0.0000,0.0000,0,0,0,0.0000,0.0000,fp_reduced,pure FP class suppressed

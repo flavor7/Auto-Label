@@ -1,0 +1,4445 @@
+{
+  "iou_threshold": 0.5,
+  "variants": {
+    "baseline": {
+      "totals": {
+        "tp": 33,
+        "fp": 161,
+        "fn": 26,
+        "precision": 0.17010309278350516,
+        "recall": 0.559322033898305,
+        "f1": 0.26086956521739135,
+        "avg_fp_per_image": 13.416666666666666,
+        "pred_instances_total": 194,
+        "gt_instances_total": 59
+      },
+      "classes": {
+        "Pipeline": {
+          "gt_instances": 4,
+          "gt_image_count": 3,
+          "pred_instances": 13,
+          "pred_image_count": 12,
+          "tp": 0,
+          "fp": 13,
+          "fn": 4,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Person": {
+          "gt_instances": 18,
+          "gt_image_count": 12,
+          "pred_instances": 19,
+          "pred_image_count": 12,
+          "tp": 18,
+          "fp": 1,
+          "fn": 0,
+          "tp_hit_image_count": 12,
+          "precision": 0.9473684210526315,
+          "recall": 1.0
+        },
+        "Safety Helmet": {
+          "gt_instances": 7,
+          "gt_image_count": 6,
+          "pred_instances": 20,
+          "pred_image_count": 12,
+          "tp": 5,
+          "fp": 15,
+          "fn": 2,
+          "tp_hit_image_count": 5,
+          "precision": 0.25,
+          "recall": 0.7142857142857143
+        },
+        "Motor": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 16,
+          "pred_image_count": 10,
+          "tp": 3,
+          "fp": 13,
+          "fn": 0,
+          "tp_hit_image_count": 3,
+          "precision": 0.1875,
+          "recall": 1.0
+        },
+        "Electrical Box": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 24,
+          "pred_image_count": 12,
+          "tp": 3,
+          "fp": 21,
+          "fn": 0,
+          "tp_hit_image_count": 3,
+          "precision": 0.125,
+          "recall": 1.0
+        },
+        "Fire Hydrant": {
+          "gt_instances": 6,
+          "gt_image_count": 6,
+          "pred_instances": 4,
+          "pred_image_count": 3,
+          "tp": 0,
+          "fp": 4,
+          "fn": 6,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Open Flame": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 7,
+          "tp": 1,
+          "fp": 7,
+          "fn": 2,
+          "tp_hit_image_count": 1,
+          "precision": 0.125,
+          "recall": 0.3333333333333333
+        },
+        "Valve": {
+          "gt_instances": 6,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 7,
+          "tp": 0,
+          "fp": 8,
+          "fn": 6,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Electronic Control Cabinet": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 24,
+          "pred_image_count": 12,
+          "tp": 0,
+          "fp": 24,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Fire Extinguisher": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 6,
+          "tp": 2,
+          "fp": 6,
+          "fn": 1,
+          "tp_hit_image_count": 2,
+          "precision": 0.25,
+          "recall": 0.6666666666666666
+        },
+        "Smoke": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 7,
+          "pred_image_count": 7,
+          "tp": 1,
+          "fp": 6,
+          "fn": 2,
+          "tp_hit_image_count": 1,
+          "precision": 0.14285714285714285,
+          "recall": 0.3333333333333333
+        },
+        "Pressure Gauge": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 17,
+          "pred_image_count": 12,
+          "tp": 0,
+          "fp": 17,
+          "fn": 3,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Ladder": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 3,
+          "pred_image_count": 3,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Direct-Blow Pipe": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 11,
+          "pred_image_count": 9,
+          "tp": 0,
+          "fp": 11,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Sight Hole Cover": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 12,
+          "pred_image_count": 10,
+          "tp": 0,
+          "fp": 12,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "assets": {
+        "test:cigarette_frame_000009": {
+          "tp": 4,
+          "fp": 15,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 3,
+              "tp": 0,
+              "fp": 3,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:cigarette_frame_000010": {
+          "tp": 4,
+          "fp": 13,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 3,
+              "tp": 1,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:cigarette_frame_000011": {
+          "tp": 4,
+          "fp": 13,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000009": {
+          "tp": 3,
+          "fp": 19,
+          "fn": 3,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 1
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 5,
+              "tp": 0,
+              "fp": 5,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 3,
+              "tp": 0,
+              "fp": 3,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000010": {
+          "tp": 4,
+          "fp": 11,
+          "fn": 1,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000011": {
+          "tp": 3,
+          "fp": 10,
+          "fn": 2,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:phone_frame_000013": {
+          "tp": 2,
+          "fp": 10,
+          "fn": 5,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 2,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 2
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Ladder": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:phone_frame_000014": {
+          "tp": 2,
+          "fp": 13,
+          "fn": 4,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 3,
+              "tp": 0,
+              "fp": 3,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 1
+            },
+            "Ladder": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            }
+          }
+        },
+        "test:phone_frame_000015": {
+          "tp": 2,
+          "fp": 13,
+          "fn": 4,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 3,
+              "tp": 0,
+              "fp": 3,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 1
+            },
+            "Ladder": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            }
+          }
+        },
+        "test:smog_frame_000005": {
+          "tp": 1,
+          "fp": 16,
+          "fn": 3,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:smog_frame_000007": {
+          "tp": 2,
+          "fp": 14,
+          "fn": 2,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:smog_frame_000010": {
+          "tp": 2,
+          "fp": 14,
+          "fn": 2,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Electronic Control Cabinet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Direct-Blow Pipe": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Sight Hole Cover": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        }
+      }
+    },
+    "refinement_v1": {
+      "totals": {
+        "tp": 33,
+        "fp": 78,
+        "fn": 26,
+        "precision": 0.2972972972972973,
+        "recall": 0.559322033898305,
+        "f1": 0.38823529411764707,
+        "avg_fp_per_image": 6.5,
+        "pred_instances_total": 111,
+        "gt_instances_total": 59
+      },
+      "classes": {
+        "Pipeline": {
+          "gt_instances": 4,
+          "gt_image_count": 3,
+          "pred_instances": 13,
+          "pred_image_count": 12,
+          "tp": 0,
+          "fp": 13,
+          "fn": 4,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Person": {
+          "gt_instances": 18,
+          "gt_image_count": 12,
+          "pred_instances": 19,
+          "pred_image_count": 12,
+          "tp": 18,
+          "fp": 1,
+          "fn": 0,
+          "tp_hit_image_count": 12,
+          "precision": 0.9473684210526315,
+          "recall": 1.0
+        },
+        "Safety Helmet": {
+          "gt_instances": 7,
+          "gt_image_count": 6,
+          "pred_instances": 15,
+          "pred_image_count": 11,
+          "tp": 5,
+          "fp": 10,
+          "fn": 2,
+          "tp_hit_image_count": 5,
+          "precision": 0.3333333333333333,
+          "recall": 0.7142857142857143
+        },
+        "Motor": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 6,
+          "tp": 3,
+          "fp": 5,
+          "fn": 0,
+          "tp_hit_image_count": 3,
+          "precision": 0.375,
+          "recall": 1.0
+        },
+        "Electrical Box": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 6,
+          "pred_image_count": 3,
+          "tp": 3,
+          "fp": 3,
+          "fn": 0,
+          "tp_hit_image_count": 3,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        "Fire Hydrant": {
+          "gt_instances": 6,
+          "gt_image_count": 6,
+          "pred_instances": 3,
+          "pred_image_count": 3,
+          "tp": 0,
+          "fp": 3,
+          "fn": 6,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Open Flame": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 7,
+          "tp": 1,
+          "fp": 7,
+          "fn": 2,
+          "tp_hit_image_count": 1,
+          "precision": 0.125,
+          "recall": 0.3333333333333333
+        },
+        "Valve": {
+          "gt_instances": 6,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 7,
+          "tp": 0,
+          "fp": 8,
+          "fn": 6,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Electronic Control Cabinet": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 0,
+          "pred_image_count": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Fire Extinguisher": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 7,
+          "pred_image_count": 6,
+          "tp": 2,
+          "fp": 5,
+          "fn": 1,
+          "tp_hit_image_count": 2,
+          "precision": 0.2857142857142857,
+          "recall": 0.6666666666666666
+        },
+        "Smoke": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 7,
+          "pred_image_count": 7,
+          "tp": 1,
+          "fp": 6,
+          "fn": 2,
+          "tp_hit_image_count": 1,
+          "precision": 0.14285714285714285,
+          "recall": 0.3333333333333333
+        },
+        "Pressure Gauge": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 17,
+          "pred_image_count": 12,
+          "tp": 0,
+          "fp": 17,
+          "fn": 3,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Ladder": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 0,
+          "pred_image_count": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Direct-Blow Pipe": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 0,
+          "pred_image_count": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Sight Hole Cover": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 0,
+          "pred_image_count": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "assets": {
+        "test:cigarette_frame_000009": {
+          "tp": 4,
+          "fp": 7,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:cigarette_frame_000010": {
+          "tp": 4,
+          "fp": 7,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:cigarette_frame_000011": {
+          "tp": 4,
+          "fp": 7,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000009": {
+          "tp": 3,
+          "fp": 7,
+          "fn": 3,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 1
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000010": {
+          "tp": 4,
+          "fp": 5,
+          "fn": 1,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000011": {
+          "tp": 3,
+          "fp": 5,
+          "fn": 2,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:phone_frame_000013": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 5,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 2,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 2
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            }
+          }
+        },
+        "test:phone_frame_000014": {
+          "tp": 2,
+          "fp": 6,
+          "fn": 4,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 1
+            }
+          }
+        },
+        "test:phone_frame_000015": {
+          "tp": 2,
+          "fp": 5,
+          "fn": 4,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 1
+            }
+          }
+        },
+        "test:smog_frame_000005": {
+          "tp": 1,
+          "fp": 11,
+          "fn": 3,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            }
+          }
+        },
+        "test:smog_frame_000007": {
+          "tp": 2,
+          "fp": 6,
+          "fn": 2,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            }
+          }
+        },
+        "test:smog_frame_000010": {
+          "tp": 2,
+          "fp": 9,
+          "fn": 2,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            }
+          }
+        }
+      }
+    },
+    "refinement_v2": {
+      "totals": {
+        "tp": 36,
+        "fp": 75,
+        "fn": 23,
+        "precision": 0.32432432432432434,
+        "recall": 0.6101694915254238,
+        "f1": 0.42352941176470593,
+        "avg_fp_per_image": 6.25,
+        "pred_instances_total": 111,
+        "gt_instances_total": 59
+      },
+      "classes": {
+        "Pipeline": {
+          "gt_instances": 4,
+          "gt_image_count": 3,
+          "pred_instances": 13,
+          "pred_image_count": 12,
+          "tp": 0,
+          "fp": 13,
+          "fn": 4,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Person": {
+          "gt_instances": 18,
+          "gt_image_count": 12,
+          "pred_instances": 19,
+          "pred_image_count": 12,
+          "tp": 18,
+          "fp": 1,
+          "fn": 0,
+          "tp_hit_image_count": 12,
+          "precision": 0.9473684210526315,
+          "recall": 1.0
+        },
+        "Safety Helmet": {
+          "gt_instances": 7,
+          "gt_image_count": 6,
+          "pred_instances": 15,
+          "pred_image_count": 11,
+          "tp": 5,
+          "fp": 10,
+          "fn": 2,
+          "tp_hit_image_count": 5,
+          "precision": 0.3333333333333333,
+          "recall": 0.7142857142857143
+        },
+        "Motor": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 6,
+          "tp": 3,
+          "fp": 5,
+          "fn": 0,
+          "tp_hit_image_count": 3,
+          "precision": 0.375,
+          "recall": 1.0
+        },
+        "Electrical Box": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 6,
+          "pred_image_count": 3,
+          "tp": 3,
+          "fp": 3,
+          "fn": 0,
+          "tp_hit_image_count": 3,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        "Fire Hydrant": {
+          "gt_instances": 6,
+          "gt_image_count": 6,
+          "pred_instances": 3,
+          "pred_image_count": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 3,
+          "tp_hit_image_count": 3,
+          "precision": 1.0,
+          "recall": 0.5
+        },
+        "Open Flame": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 7,
+          "tp": 1,
+          "fp": 7,
+          "fn": 2,
+          "tp_hit_image_count": 1,
+          "precision": 0.125,
+          "recall": 0.3333333333333333
+        },
+        "Valve": {
+          "gt_instances": 6,
+          "gt_image_count": 3,
+          "pred_instances": 8,
+          "pred_image_count": 7,
+          "tp": 0,
+          "fp": 8,
+          "fn": 6,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Electronic Control Cabinet": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 0,
+          "pred_image_count": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Fire Extinguisher": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 7,
+          "pred_image_count": 6,
+          "tp": 2,
+          "fp": 5,
+          "fn": 1,
+          "tp_hit_image_count": 2,
+          "precision": 0.2857142857142857,
+          "recall": 0.6666666666666666
+        },
+        "Smoke": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 7,
+          "pred_image_count": 7,
+          "tp": 1,
+          "fp": 6,
+          "fn": 2,
+          "tp_hit_image_count": 1,
+          "precision": 0.14285714285714285,
+          "recall": 0.3333333333333333
+        },
+        "Pressure Gauge": {
+          "gt_instances": 3,
+          "gt_image_count": 3,
+          "pred_instances": 17,
+          "pred_image_count": 12,
+          "tp": 0,
+          "fp": 17,
+          "fn": 3,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Ladder": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 0,
+          "pred_image_count": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Direct-Blow Pipe": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 0,
+          "pred_image_count": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Sight Hole Cover": {
+          "gt_instances": 0,
+          "gt_image_count": 0,
+          "pred_instances": 0,
+          "pred_image_count": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp_hit_image_count": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "assets": {
+        "test:cigarette_frame_000009": {
+          "tp": 4,
+          "fp": 6,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:cigarette_frame_000010": {
+          "tp": 4,
+          "fp": 6,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:cigarette_frame_000011": {
+          "tp": 4,
+          "fp": 6,
+          "fn": 0,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Electrical Box": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000009": {
+          "tp": 3,
+          "fp": 7,
+          "fn": 3,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 1
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Open Flame": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Smoke": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000010": {
+          "tp": 4,
+          "fp": 5,
+          "fn": 1,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:head_frame_000011": {
+          "tp": 3,
+          "fp": 5,
+          "fn": 2,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 1
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            }
+          }
+        },
+        "test:phone_frame_000013": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 5,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 2,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 2
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            }
+          }
+        },
+        "test:phone_frame_000014": {
+          "tp": 2,
+          "fp": 6,
+          "fn": 4,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Motor": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 1
+            }
+          }
+        },
+        "test:phone_frame_000015": {
+          "tp": 2,
+          "fp": 5,
+          "fn": 4,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Person": {
+              "gt_instances": 2,
+              "pred_instances": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 2,
+              "pred_instances": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 2
+            },
+            "Pressure Gauge": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 1
+            }
+          }
+        },
+        "test:smog_frame_000005": {
+          "tp": 2,
+          "fp": 11,
+          "fn": 2,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            }
+          }
+        },
+        "test:smog_frame_000007": {
+          "tp": 3,
+          "fp": 6,
+          "fn": 1,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            }
+          }
+        },
+        "test:smog_frame_000010": {
+          "tp": 3,
+          "fp": 9,
+          "fn": 1,
+          "classes": {
+            "Pipeline": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Person": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Safety Helmet": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Fire Hydrant": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0
+            },
+            "Open Flame": {
+              "gt_instances": 1,
+              "pred_instances": 2,
+              "tp": 1,
+              "fp": 1,
+              "fn": 0
+            },
+            "Valve": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            },
+            "Fire Extinguisher": {
+              "gt_instances": 0,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0
+            },
+            "Smoke": {
+              "gt_instances": 1,
+              "pred_instances": 1,
+              "tp": 0,
+              "fp": 1,
+              "fn": 1
+            },
+            "Pressure Gauge": {
+              "gt_instances": 0,
+              "pred_instances": 2,
+              "tp": 0,
+              "fp": 2,
+              "fn": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "baseline_totals": {
+      "tp": 33,
+      "fp": 161,
+      "fn": 26,
+      "precision": 0.17010309278350516,
+      "recall": 0.559322033898305,
+      "f1": 0.26086956521739135,
+      "avg_fp_per_image": 13.416666666666666,
+      "pred_instances_total": 194,
+      "gt_instances_total": 59
+    },
+    "refinement_v1_totals": {
+      "tp": 33,
+      "fp": 78,
+      "fn": 26,
+      "precision": 0.2972972972972973,
+      "recall": 0.559322033898305,
+      "f1": 0.38823529411764707,
+      "avg_fp_per_image": 6.5,
+      "pred_instances_total": 111,
+      "gt_instances_total": 59
+    },
+    "refinement_v2_totals": {
+      "tp": 36,
+      "fp": 75,
+      "fn": 23,
+      "precision": 0.32432432432432434,
+      "recall": 0.6101694915254238,
+      "f1": 0.42352941176470593,
+      "avg_fp_per_image": 6.25,
+      "pred_instances_total": 111,
+      "gt_instances_total": 59
+    },
+    "refinement_v1_vs_baseline": {
+      "mainly_improved_fp": [
+        "Safety Helmet",
+        "Motor",
+        "Electrical Box",
+        "Fire Hydrant",
+        "Electronic Control Cabinet",
+        "Fire Extinguisher",
+        "Ladder",
+        "Direct-Blow Pipe",
+        "Sight Hole Cover"
+      ],
+      "mainly_improved_fn": [],
+      "almost_no_change": [
+        "Pipeline",
+        "Person",
+        "Open Flame",
+        "Valve",
+        "Smoke",
+        "Pressure Gauge"
+      ],
+      "worsened_or_mixed": []
+    },
+    "refinement_v2_vs_baseline": {
+      "mainly_improved_fp": [
+        "Safety Helmet",
+        "Motor",
+        "Electrical Box",
+        "Electronic Control Cabinet",
+        "Fire Extinguisher",
+        "Ladder",
+        "Direct-Blow Pipe",
+        "Sight Hole Cover"
+      ],
+      "mainly_improved_fn": [
+        "Fire Hydrant"
+      ],
+      "almost_no_change": [
+        "Pipeline",
+        "Person",
+        "Open Flame",
+        "Valve",
+        "Smoke",
+        "Pressure Gauge"
+      ],
+      "worsened_or_mixed": []
+    }
+  },
+  "comparison_rows": [
+    {
+      "class_name": "Pipeline",
+      "gt_instances": 4,
+      "gt_image_count": 3,
+      "baseline": {
+        "gt_instances": 4,
+        "gt_image_count": 3,
+        "pred_instances": 13,
+        "pred_image_count": 12,
+        "tp": 0,
+        "fp": 13,
+        "fn": 4,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v1": {
+        "gt_instances": 4,
+        "gt_image_count": 3,
+        "pred_instances": 13,
+        "pred_image_count": 12,
+        "tp": 0,
+        "fp": 13,
+        "fn": 4,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v2": {
+        "gt_instances": 4,
+        "gt_image_count": 3,
+        "pred_instances": 13,
+        "pred_image_count": 12,
+        "tp": 0,
+        "fp": 13,
+        "fn": 4,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "No material change"
+        ],
+        "refinement_v2": [
+          "No material change"
+        ]
+      }
+    },
+    {
+      "class_name": "Person",
+      "gt_instances": 18,
+      "gt_image_count": 12,
+      "baseline": {
+        "gt_instances": 18,
+        "gt_image_count": 12,
+        "pred_instances": 19,
+        "pred_image_count": 12,
+        "tp": 18,
+        "fp": 1,
+        "fn": 0,
+        "tp_hit_image_count": 12,
+        "precision": 0.9473684210526315,
+        "recall": 1.0
+      },
+      "refinement_v1": {
+        "gt_instances": 18,
+        "gt_image_count": 12,
+        "pred_instances": 19,
+        "pred_image_count": 12,
+        "tp": 18,
+        "fp": 1,
+        "fn": 0,
+        "tp_hit_image_count": 12,
+        "precision": 0.9473684210526315,
+        "recall": 1.0
+      },
+      "refinement_v2": {
+        "gt_instances": 18,
+        "gt_image_count": 12,
+        "pred_instances": 19,
+        "pred_image_count": 12,
+        "tp": 18,
+        "fp": 1,
+        "fn": 0,
+        "tp_hit_image_count": 12,
+        "precision": 0.9473684210526315,
+        "recall": 1.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "No material change"
+        ],
+        "refinement_v2": [
+          "No material change"
+        ]
+      }
+    },
+    {
+      "class_name": "Safety Helmet",
+      "gt_instances": 7,
+      "gt_image_count": 6,
+      "baseline": {
+        "gt_instances": 7,
+        "gt_image_count": 6,
+        "pred_instances": 20,
+        "pred_image_count": 12,
+        "tp": 5,
+        "fp": 15,
+        "fn": 2,
+        "tp_hit_image_count": 5,
+        "precision": 0.25,
+        "recall": 0.7142857142857143
+      },
+      "refinement_v1": {
+        "gt_instances": 7,
+        "gt_image_count": 6,
+        "pred_instances": 15,
+        "pred_image_count": 11,
+        "tp": 5,
+        "fp": 10,
+        "fn": 2,
+        "tp_hit_image_count": 5,
+        "precision": 0.3333333333333333,
+        "recall": 0.7142857142857143
+      },
+      "refinement_v2": {
+        "gt_instances": 7,
+        "gt_image_count": 6,
+        "pred_instances": 15,
+        "pred_image_count": 11,
+        "tp": 5,
+        "fp": 10,
+        "fn": 2,
+        "tp_hit_image_count": 5,
+        "precision": 0.3333333333333333,
+        "recall": 0.7142857142857143
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -5,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -5,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FP improved"
+        ]
+      }
+    },
+    {
+      "class_name": "Motor",
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "baseline": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 16,
+        "pred_image_count": 10,
+        "tp": 3,
+        "fp": 13,
+        "fn": 0,
+        "tp_hit_image_count": 3,
+        "precision": 0.1875,
+        "recall": 1.0
+      },
+      "refinement_v1": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 6,
+        "tp": 3,
+        "fp": 5,
+        "fn": 0,
+        "tp_hit_image_count": 3,
+        "precision": 0.375,
+        "recall": 1.0
+      },
+      "refinement_v2": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 6,
+        "tp": 3,
+        "fp": 5,
+        "fn": 0,
+        "tp_hit_image_count": 3,
+        "precision": 0.375,
+        "recall": 1.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -8,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -8,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FP improved"
+        ]
+      }
+    },
+    {
+      "class_name": "Electrical Box",
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "baseline": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 24,
+        "pred_image_count": 12,
+        "tp": 3,
+        "fp": 21,
+        "fn": 0,
+        "tp_hit_image_count": 3,
+        "precision": 0.125,
+        "recall": 1.0
+      },
+      "refinement_v1": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 6,
+        "pred_image_count": 3,
+        "tp": 3,
+        "fp": 3,
+        "fn": 0,
+        "tp_hit_image_count": 3,
+        "precision": 0.5,
+        "recall": 1.0
+      },
+      "refinement_v2": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 6,
+        "pred_image_count": 3,
+        "tp": 3,
+        "fp": 3,
+        "fn": 0,
+        "tp_hit_image_count": 3,
+        "precision": 0.5,
+        "recall": 1.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -18,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -18,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FP improved"
+        ]
+      }
+    },
+    {
+      "class_name": "Fire Hydrant",
+      "gt_instances": 6,
+      "gt_image_count": 6,
+      "baseline": {
+        "gt_instances": 6,
+        "gt_image_count": 6,
+        "pred_instances": 4,
+        "pred_image_count": 3,
+        "tp": 0,
+        "fp": 4,
+        "fn": 6,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v1": {
+        "gt_instances": 6,
+        "gt_image_count": 6,
+        "pred_instances": 3,
+        "pred_image_count": 3,
+        "tp": 0,
+        "fp": 3,
+        "fn": 6,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v2": {
+        "gt_instances": 6,
+        "gt_image_count": 6,
+        "pred_instances": 3,
+        "pred_image_count": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 3,
+        "tp_hit_image_count": 3,
+        "precision": 1.0,
+        "recall": 0.5
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -1,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 3,
+        "fp": -4,
+        "fn": -3
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FN improved",
+          "FP improved"
+        ]
+      }
+    },
+    {
+      "class_name": "Open Flame",
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "baseline": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 7,
+        "tp": 1,
+        "fp": 7,
+        "fn": 2,
+        "tp_hit_image_count": 1,
+        "precision": 0.125,
+        "recall": 0.3333333333333333
+      },
+      "refinement_v1": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 7,
+        "tp": 1,
+        "fp": 7,
+        "fn": 2,
+        "tp_hit_image_count": 1,
+        "precision": 0.125,
+        "recall": 0.3333333333333333
+      },
+      "refinement_v2": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 7,
+        "tp": 1,
+        "fp": 7,
+        "fn": 2,
+        "tp_hit_image_count": 1,
+        "precision": 0.125,
+        "recall": 0.3333333333333333
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "No material change"
+        ],
+        "refinement_v2": [
+          "No material change"
+        ]
+      }
+    },
+    {
+      "class_name": "Valve",
+      "gt_instances": 6,
+      "gt_image_count": 3,
+      "baseline": {
+        "gt_instances": 6,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 7,
+        "tp": 0,
+        "fp": 8,
+        "fn": 6,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v1": {
+        "gt_instances": 6,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 7,
+        "tp": 0,
+        "fp": 8,
+        "fn": 6,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v2": {
+        "gt_instances": 6,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 7,
+        "tp": 0,
+        "fp": 8,
+        "fn": 6,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "No material change"
+        ],
+        "refinement_v2": [
+          "No material change"
+        ]
+      }
+    },
+    {
+      "class_name": "Electronic Control Cabinet",
+      "gt_instances": 0,
+      "gt_image_count": 0,
+      "baseline": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 24,
+        "pred_image_count": 12,
+        "tp": 0,
+        "fp": 24,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v1": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 0,
+        "pred_image_count": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v2": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 0,
+        "pred_image_count": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -24,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -24,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FP improved"
+        ]
+      }
+    },
+    {
+      "class_name": "Fire Extinguisher",
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "baseline": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 8,
+        "pred_image_count": 6,
+        "tp": 2,
+        "fp": 6,
+        "fn": 1,
+        "tp_hit_image_count": 2,
+        "precision": 0.25,
+        "recall": 0.6666666666666666
+      },
+      "refinement_v1": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 7,
+        "pred_image_count": 6,
+        "tp": 2,
+        "fp": 5,
+        "fn": 1,
+        "tp_hit_image_count": 2,
+        "precision": 0.2857142857142857,
+        "recall": 0.6666666666666666
+      },
+      "refinement_v2": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 7,
+        "pred_image_count": 6,
+        "tp": 2,
+        "fp": 5,
+        "fn": 1,
+        "tp_hit_image_count": 2,
+        "precision": 0.2857142857142857,
+        "recall": 0.6666666666666666
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -1,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -1,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FP improved"
+        ]
+      }
+    },
+    {
+      "class_name": "Smoke",
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "baseline": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 7,
+        "pred_image_count": 7,
+        "tp": 1,
+        "fp": 6,
+        "fn": 2,
+        "tp_hit_image_count": 1,
+        "precision": 0.14285714285714285,
+        "recall": 0.3333333333333333
+      },
+      "refinement_v1": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 7,
+        "pred_image_count": 7,
+        "tp": 1,
+        "fp": 6,
+        "fn": 2,
+        "tp_hit_image_count": 1,
+        "precision": 0.14285714285714285,
+        "recall": 0.3333333333333333
+      },
+      "refinement_v2": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 7,
+        "pred_image_count": 7,
+        "tp": 1,
+        "fp": 6,
+        "fn": 2,
+        "tp_hit_image_count": 1,
+        "precision": 0.14285714285714285,
+        "recall": 0.3333333333333333
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "No material change"
+        ],
+        "refinement_v2": [
+          "No material change"
+        ]
+      }
+    },
+    {
+      "class_name": "Pressure Gauge",
+      "gt_instances": 3,
+      "gt_image_count": 3,
+      "baseline": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 17,
+        "pred_image_count": 12,
+        "tp": 0,
+        "fp": 17,
+        "fn": 3,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v1": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 17,
+        "pred_image_count": 12,
+        "tp": 0,
+        "fp": 17,
+        "fn": 3,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v2": {
+        "gt_instances": 3,
+        "gt_image_count": 3,
+        "pred_instances": 17,
+        "pred_image_count": 12,
+        "tp": 0,
+        "fp": 17,
+        "fn": 3,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "No material change"
+        ],
+        "refinement_v2": [
+          "No material change"
+        ]
+      }
+    },
+    {
+      "class_name": "Ladder",
+      "gt_instances": 0,
+      "gt_image_count": 0,
+      "baseline": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 3,
+        "pred_image_count": 3,
+        "tp": 0,
+        "fp": 3,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v1": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 0,
+        "pred_image_count": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v2": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 0,
+        "pred_image_count": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -3,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -3,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FP improved"
+        ]
+      }
+    },
+    {
+      "class_name": "Direct-Blow Pipe",
+      "gt_instances": 0,
+      "gt_image_count": 0,
+      "baseline": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 11,
+        "pred_image_count": 9,
+        "tp": 0,
+        "fp": 11,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v1": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 0,
+        "pred_image_count": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v2": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 0,
+        "pred_image_count": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -11,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -11,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FP improved"
+        ]
+      }
+    },
+    {
+      "class_name": "Sight Hole Cover",
+      "gt_instances": 0,
+      "gt_image_count": 0,
+      "baseline": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 12,
+        "pred_image_count": 10,
+        "tp": 0,
+        "fp": 12,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v1": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 0,
+        "pred_image_count": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "refinement_v2": {
+        "gt_instances": 0,
+        "gt_image_count": 0,
+        "pred_instances": 0,
+        "pred_image_count": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tp_hit_image_count": 0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "delta_v1_vs_baseline": {
+        "tp": 0,
+        "fp": -12,
+        "fn": 0
+      },
+      "delta_v2_vs_baseline": {
+        "tp": 0,
+        "fp": -12,
+        "fn": 0
+      },
+      "change_direction": {
+        "refinement_v1": [
+          "FP improved"
+        ],
+        "refinement_v2": [
+          "FP improved"
+        ]
+      }
+    }
+  ],
+  "paper_table_rows": [
+    {
+      "class_name": "Pipeline",
+      "gt_count": 4,
+      "baseline_tp": 0,
+      "baseline_fp": 13,
+      "baseline_fn": 4,
+      "baseline_precision": "0.0000",
+      "baseline_recall": "0.0000",
+      "v1_tp": 0,
+      "v1_fp": 13,
+      "v1_fn": 4,
+      "v1_precision": "0.0000",
+      "v1_recall": "0.0000",
+      "v2_tp": 0,
+      "v2_fp": 13,
+      "v2_fn": 4,
+      "v2_precision": "0.0000",
+      "v2_recall": "0.0000",
+      "main_change_type": "boundary_case",
+      "notes": "still extent-limited"
+    },
+    {
+      "class_name": "Person",
+      "gt_count": 18,
+      "baseline_tp": 18,
+      "baseline_fp": 1,
+      "baseline_fn": 0,
+      "baseline_precision": "0.9474",
+      "baseline_recall": "1.0000",
+      "v1_tp": 18,
+      "v1_fp": 1,
+      "v1_fn": 0,
+      "v1_precision": "0.9474",
+      "v1_recall": "1.0000",
+      "v2_tp": 18,
+      "v2_fp": 1,
+      "v2_fn": 0,
+      "v2_precision": "0.9474",
+      "v2_recall": "1.0000",
+      "main_change_type": "stable",
+      "notes": "stable strong baseline"
+    },
+    {
+      "class_name": "Safety Helmet",
+      "gt_count": 7,
+      "baseline_tp": 5,
+      "baseline_fp": 15,
+      "baseline_fn": 2,
+      "baseline_precision": "0.2500",
+      "baseline_recall": "0.7143",
+      "v1_tp": 5,
+      "v1_fp": 10,
+      "v1_fn": 2,
+      "v1_precision": "0.3333",
+      "v1_recall": "0.7143",
+      "v2_tp": 5,
+      "v2_fp": 10,
+      "v2_fn": 2,
+      "v2_precision": "0.3333",
+      "v2_recall": "0.7143",
+      "main_change_type": "fp_reduced",
+      "notes": "high FP reduced, TP kept"
+    },
+    {
+      "class_name": "Motor",
+      "gt_count": 3,
+      "baseline_tp": 3,
+      "baseline_fp": 13,
+      "baseline_fn": 0,
+      "baseline_precision": "0.1875",
+      "baseline_recall": "1.0000",
+      "v1_tp": 3,
+      "v1_fp": 5,
+      "v1_fn": 0,
+      "v1_precision": "0.3750",
+      "v1_recall": "1.0000",
+      "v2_tp": 3,
+      "v2_fp": 5,
+      "v2_fn": 0,
+      "v2_precision": "0.3750",
+      "v2_recall": "1.0000",
+      "main_change_type": "fp_reduced",
+      "notes": "high FP reduced, TP kept"
+    },
+    {
+      "class_name": "Electrical Box",
+      "gt_count": 3,
+      "baseline_tp": 3,
+      "baseline_fp": 21,
+      "baseline_fn": 0,
+      "baseline_precision": "0.1250",
+      "baseline_recall": "1.0000",
+      "v1_tp": 3,
+      "v1_fp": 3,
+      "v1_fn": 0,
+      "v1_precision": "0.5000",
+      "v1_recall": "1.0000",
+      "v2_tp": 3,
+      "v2_fp": 3,
+      "v2_fn": 0,
+      "v2_precision": "0.5000",
+      "v2_recall": "1.0000",
+      "main_change_type": "fp_reduced",
+      "notes": "high FP strongly suppressed"
+    },
+    {
+      "class_name": "Fire Hydrant",
+      "gt_count": 6,
+      "baseline_tp": 0,
+      "baseline_fp": 4,
+      "baseline_fn": 6,
+      "baseline_precision": "0.0000",
+      "baseline_recall": "0.0000",
+      "v1_tp": 0,
+      "v1_fp": 3,
+      "v1_fn": 6,
+      "v1_precision": "0.0000",
+      "v1_recall": "0.0000",
+      "v2_tp": 3,
+      "v2_fp": 0,
+      "v2_fn": 3,
+      "v2_precision": "1.0000",
+      "v2_recall": "0.5000",
+      "main_change_type": "fn_reduced",
+      "notes": "fire hydrant partially recovered"
+    },
+    {
+      "class_name": "Open Flame",
+      "gt_count": 3,
+      "baseline_tp": 1,
+      "baseline_fp": 7,
+      "baseline_fn": 2,
+      "baseline_precision": "0.1250",
+      "baseline_recall": "0.3333",
+      "v1_tp": 1,
+      "v1_fp": 7,
+      "v1_fn": 2,
+      "v1_precision": "0.1250",
+      "v1_recall": "0.3333",
+      "v2_tp": 1,
+      "v2_fp": 7,
+      "v2_fn": 2,
+      "v2_precision": "0.1250",
+      "v2_recall": "0.3333",
+      "main_change_type": "stable",
+      "notes": "stable, recall still limited"
+    },
+    {
+      "class_name": "Valve",
+      "gt_count": 6,
+      "baseline_tp": 0,
+      "baseline_fp": 8,
+      "baseline_fn": 6,
+      "baseline_precision": "0.0000",
+      "baseline_recall": "0.0000",
+      "v1_tp": 0,
+      "v1_fp": 8,
+      "v1_fn": 6,
+      "v1_precision": "0.0000",
+      "v1_recall": "0.0000",
+      "v2_tp": 0,
+      "v2_fp": 8,
+      "v2_fn": 6,
+      "v2_precision": "0.0000",
+      "v2_recall": "0.0000",
+      "main_change_type": "boundary_case",
+      "notes": "still candidate-missing"
+    },
+    {
+      "class_name": "Electronic Control Cabinet",
+      "gt_count": 0,
+      "baseline_tp": 0,
+      "baseline_fp": 24,
+      "baseline_fn": 0,
+      "baseline_precision": "0.0000",
+      "baseline_recall": "0.0000",
+      "v1_tp": 0,
+      "v1_fp": 0,
+      "v1_fn": 0,
+      "v1_precision": "0.0000",
+      "v1_recall": "0.0000",
+      "v2_tp": 0,
+      "v2_fp": 0,
+      "v2_fn": 0,
+      "v2_precision": "0.0000",
+      "v2_recall": "0.0000",
+      "main_change_type": "fp_reduced",
+      "notes": "pure FP class suppressed"
+    },
+    {
+      "class_name": "Fire Extinguisher",
+      "gt_count": 3,
+      "baseline_tp": 2,
+      "baseline_fp": 6,
+      "baseline_fn": 1,
+      "baseline_precision": "0.2500",
+      "baseline_recall": "0.6667",
+      "v1_tp": 2,
+      "v1_fp": 5,
+      "v1_fn": 1,
+      "v1_precision": "0.2857",
+      "v1_recall": "0.6667",
+      "v2_tp": 2,
+      "v2_fp": 5,
+      "v2_fn": 1,
+      "v2_precision": "0.2857",
+      "v2_recall": "0.6667",
+      "main_change_type": "fp_reduced",
+      "notes": "minor FP reduction"
+    },
+    {
+      "class_name": "Smoke",
+      "gt_count": 3,
+      "baseline_tp": 1,
+      "baseline_fp": 6,
+      "baseline_fn": 2,
+      "baseline_precision": "0.1429",
+      "baseline_recall": "0.3333",
+      "v1_tp": 1,
+      "v1_fp": 6,
+      "v1_fn": 2,
+      "v1_precision": "0.1429",
+      "v1_recall": "0.3333",
+      "v2_tp": 1,
+      "v2_fp": 6,
+      "v2_fn": 2,
+      "v2_precision": "0.1429",
+      "v2_recall": "0.3333",
+      "main_change_type": "stable",
+      "notes": "stable, recall still limited"
+    },
+    {
+      "class_name": "Pressure Gauge",
+      "gt_count": 3,
+      "baseline_tp": 0,
+      "baseline_fp": 17,
+      "baseline_fn": 3,
+      "baseline_precision": "0.0000",
+      "baseline_recall": "0.0000",
+      "v1_tp": 0,
+      "v1_fp": 17,
+      "v1_fn": 3,
+      "v1_precision": "0.0000",
+      "v1_recall": "0.0000",
+      "v2_tp": 0,
+      "v2_fp": 17,
+      "v2_fn": 3,
+      "v2_precision": "0.0000",
+      "v2_recall": "0.0000",
+      "main_change_type": "boundary_case",
+      "notes": "still mislocalized"
+    },
+    {
+      "class_name": "Ladder",
+      "gt_count": 0,
+      "baseline_tp": 0,
+      "baseline_fp": 3,
+      "baseline_fn": 0,
+      "baseline_precision": "0.0000",
+      "baseline_recall": "0.0000",
+      "v1_tp": 0,
+      "v1_fp": 0,
+      "v1_fn": 0,
+      "v1_precision": "0.0000",
+      "v1_recall": "0.0000",
+      "v2_tp": 0,
+      "v2_fp": 0,
+      "v2_fn": 0,
+      "v2_precision": "0.0000",
+      "v2_recall": "0.0000",
+      "main_change_type": "fp_reduced",
+      "notes": "pure FP class suppressed"
+    },
+    {
+      "class_name": "Direct-Blow Pipe",
+      "gt_count": 0,
+      "baseline_tp": 0,
+      "baseline_fp": 11,
+      "baseline_fn": 0,
+      "baseline_precision": "0.0000",
+      "baseline_recall": "0.0000",
+      "v1_tp": 0,
+      "v1_fp": 0,
+      "v1_fn": 0,
+      "v1_precision": "0.0000",
+      "v1_recall": "0.0000",
+      "v2_tp": 0,
+      "v2_fp": 0,
+      "v2_fn": 0,
+      "v2_precision": "0.0000",
+      "v2_recall": "0.0000",
+      "main_change_type": "fp_reduced",
+      "notes": "pure FP class suppressed"
+    },
+    {
+      "class_name": "Sight Hole Cover",
+      "gt_count": 0,
+      "baseline_tp": 0,
+      "baseline_fp": 12,
+      "baseline_fn": 0,
+      "baseline_precision": "0.0000",
+      "baseline_recall": "0.0000",
+      "v1_tp": 0,
+      "v1_fp": 0,
+      "v1_fn": 0,
+      "v1_precision": "0.0000",
+      "v1_recall": "0.0000",
+      "v2_tp": 0,
+      "v2_fp": 0,
+      "v2_fn": 0,
+      "v2_precision": "0.0000",
+      "v2_recall": "0.0000",
+      "main_change_type": "fp_reduced",
+      "notes": "pure FP class suppressed"
+    }
+  ]
+}

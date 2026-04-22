@@ -1,0 +1,16 @@
+class_name,gt_instances,gt_image_count,baseline_tp,baseline_fp,baseline_fn,baseline_precision,baseline_recall,baseline_pred_instances,baseline_pred_image_count,baseline_tp_hit_image_count,refinement_v1_tp,refinement_v1_fp,refinement_v1_fn,refinement_v1_precision,refinement_v1_recall,refinement_v1_pred_instances,refinement_v1_pred_image_count,refinement_v1_tp_hit_image_count,refinement_v2_tp,refinement_v2_fp,refinement_v2_fn,refinement_v2_precision,refinement_v2_recall,refinement_v2_pred_instances,refinement_v2_pred_image_count,refinement_v2_tp_hit_image_count,delta_v1_tp,delta_v1_fp,delta_v1_fn,delta_v2_tp,delta_v2_fp,delta_v2_fn,change_tags_v1,change_tags_v2
+Pipeline,4,3,0,13,4,0.0000,0.0000,13,12,0,0,13,4,0.0000,0.0000,13,12,0,0,13,4,0.0000,0.0000,13,12,0,0,0,0,0,0,0,No material change,No material change
+Person,18,12,18,1,0,0.9474,1.0000,19,12,12,18,1,0,0.9474,1.0000,19,12,12,18,1,0,0.9474,1.0000,19,12,12,0,0,0,0,0,0,No material change,No material change
+Safety Helmet,7,6,5,15,2,0.2500,0.7143,20,12,5,5,10,2,0.3333,0.7143,15,11,5,5,10,2,0.3333,0.7143,15,11,5,0,-5,0,0,-5,0,FP improved,FP improved
+Motor,3,3,3,13,0,0.1875,1.0000,16,10,3,3,5,0,0.3750,1.0000,8,6,3,3,5,0,0.3750,1.0000,8,6,3,0,-8,0,0,-8,0,FP improved,FP improved
+Electrical Box,3,3,3,21,0,0.1250,1.0000,24,12,3,3,3,0,0.5000,1.0000,6,3,3,3,3,0,0.5000,1.0000,6,3,3,0,-18,0,0,-18,0,FP improved,FP improved
+Fire Hydrant,6,6,0,4,6,0.0000,0.0000,4,3,0,0,3,6,0.0000,0.0000,3,3,0,3,0,3,1.0000,0.5000,3,3,3,0,-1,0,3,-4,-3,FP improved,"FN improved, FP improved"
+Open Flame,3,3,1,7,2,0.1250,0.3333,8,7,1,1,7,2,0.1250,0.3333,8,7,1,1,7,2,0.1250,0.3333,8,7,1,0,0,0,0,0,0,No material change,No material change
+Valve,6,3,0,8,6,0.0000,0.0000,8,7,0,0,8,6,0.0000,0.0000,8,7,0,0,8,6,0.0000,0.0000,8,7,0,0,0,0,0,0,0,No material change,No material change
+Electronic Control Cabinet,0,0,0,24,0,0.0000,0.0000,24,12,0,0,0,0,0.0000,0.0000,0,0,0,0,0,0,0.0000,0.0000,0,0,0,0,-24,0,0,-24,0,FP improved,FP improved
+Fire Extinguisher,3,3,2,6,1,0.2500,0.6667,8,6,2,2,5,1,0.2857,0.6667,7,6,2,2,5,1,0.2857,0.6667,7,6,2,0,-1,0,0,-1,0,FP improved,FP improved
+Smoke,3,3,1,6,2,0.1429,0.3333,7,7,1,1,6,2,0.1429,0.3333,7,7,1,1,6,2,0.1429,0.3333,7,7,1,0,0,0,0,0,0,No material change,No material change
+Pressure Gauge,3,3,0,17,3,0.0000,0.0000,17,12,0,0,17,3,0.0000,0.0000,17,12,0,0,17,3,0.0000,0.0000,17,12,0,0,0,0,0,0,0,No material change,No material change
+Ladder,0,0,0,3,0,0.0000,0.0000,3,3,0,0,0,0,0.0000,0.0000,0,0,0,0,0,0,0.0000,0.0000,0,0,0,0,-3,0,0,-3,0,FP improved,FP improved
+Direct-Blow Pipe,0,0,0,11,0,0.0000,0.0000,11,9,0,0,0,0,0.0000,0.0000,0,0,0,0,0,0,0.0000,0.0000,0,0,0,0,-11,0,0,-11,0,FP improved,FP improved
+Sight Hole Cover,0,0,0,12,0,0.0000,0.0000,12,10,0,0,0,0,0.0000,0.0000,0,0,0,0,0,0,0.0000,0.0000,0,0,0,0,-12,0,0,-12,0,FP improved,FP improved
